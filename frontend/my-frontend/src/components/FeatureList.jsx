@@ -10,20 +10,12 @@ import CheckIcon from "@mui/icons-material/Check";
 
 export default function BasicList() {
   return (
-    <Box sx={{ width: "60%", bgcolor: "background.paper", marginLeft: 0 }}>
+    <Box sx={{ width: "100%", bgcolor: "background.paper", marginLeft: 0 }}>
       <nav aria-label='main mailbox folders'>
         <List>
+          <ListItem disablePadding></ListItem>
           <ListItem disablePadding>
             <ListItemButton>
-              <ListItemIcon></ListItemIcon>
-              <ListItemText primary='Inbox' />
-            </ListItemButton>
-          </ListItem>
-          <ListItem disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <CheckIcon />
-              </ListItemIcon>
               <ListItemText primary='Drafts' />
             </ListItemButton>
           </ListItem>

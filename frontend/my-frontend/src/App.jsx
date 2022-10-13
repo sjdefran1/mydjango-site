@@ -11,13 +11,18 @@ import {
   Container,
   Avatar,
   CssBaseline,
+  Paper,
 } from "@mui/material";
-import CoolCard from "./components/CoolCard.jsx";
+import ProjectCard from "./components/ProjectCard.jsx";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import Intro from "./components/Intro.jsx";
 
 const darkTheme = createTheme({
   palette: {
     mode: "dark",
+  },
+  typography: {
+    caption: {},
   },
 });
 const App = () => {
@@ -33,10 +38,20 @@ const App = () => {
         </AppBar>
         <main>
           <div>
-            <Container maxWidth='sm'>
-              <CoolCard />
+            <Intro />
+            <Container maxWidth='md'>
+              <Grid container spacing={2}>
+                <Grid item xs={6}>
+                  <ProjectCard />
+                </Grid>
+                <Grid item xs={6}>
+                  <ProjectCard />
+                </Grid>
+              </Grid>
             </Container>
           </div>
+          <br></br>
+          <br></br>
         </main>
       </ThemeProvider>
     </>
