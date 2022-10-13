@@ -19,6 +19,8 @@ import mePic from "../static/pics/steps-bw.jpg";
 import pythonSVG from "../static/pics/python-5.svg";
 import djangoJPG from "../static/pics/django.jpg";
 import goSportsLogo from "../static/pics/blue_go_sports.png";
+import htmlSVG from "../static/pics/html5-2.svg";
+import bootStrapSVG from "../static/pics/bootstrap.svg";
 import teamSelectGIF from "../static/pics/team-select.gif";
 import FeatureList from "./FeatureList.jsx";
 
@@ -106,14 +108,48 @@ export default function CoolCard() {
         </Divider>
         <CardContent>
           <>
-            <Stack direction='row' spacing={2}>
-              <Avatar src={pythonSVG} aria-label='python' />
-
-              <Avatar
-                src={djangoJPG}
-                aria-label='django'
-                sx={{ marginLeft: 2 }}
-              />
+            <Stack
+              direction='row'
+              spacing={1}
+              sx={{
+                justifyContent: "center",
+              }}>
+              <IconButton aria-label='ppy'>
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://www.python.org/'>
+                  <Avatar src={pythonSVG} aria-label='python' />
+                </a>
+              </IconButton>
+              <IconButton aria-label='django'>
+                <a
+                  href='https://www.djangoproject.com/'
+                  target='_blank'
+                  rel='noreferrer'>
+                  <Avatar
+                    src={djangoJPG}
+                    aria-label='django'
+                    sx={{ height: "45px", wdith: "56px" }}
+                  />
+                </a>
+              </IconButton>
+              <IconButton aria-label='html'>
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://html5-tutorial.net/introduction-to-html/your-first-webpage/'>
+                  <Avatar src={htmlSVG} aria-label='html' />
+                </a>
+              </IconButton>
+              <IconButton aria-label='html'>
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://getbootstrap.com/docs/5.2/getting-started/introduction/'>
+                  <Avatar src={bootStrapSVG} aria-label='bootstrap' />
+                </a>
+              </IconButton>
             </Stack>
           </>
         </CardContent>
