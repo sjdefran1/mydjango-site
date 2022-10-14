@@ -1,0 +1,13 @@
+<Avatar
+src={cyPNG}
+alt='cy'
+sx={{
+    marginTop: 2,
+    ml: "auto",
+    mr: "auto",
+    height: 200,
+    width: 200,
+    border: 1,
+    overflow: "visible",
+    padding: 0,
+}}></Avatar>
