@@ -20,6 +20,11 @@ import Intro from "./components/Intro/Intro.jsx";
 const darkTheme = createTheme({
   palette: {
     mode: "dark",
+    secondary: {
+      main: "#5c6bc0",
+      light: "#9fa8da",
+      dark: "#3949ab",
+    },
   },
   typography: {
     caption: {},

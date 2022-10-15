@@ -24,41 +24,39 @@ export default function Intro() {
   return (
     <>
       <Container maxWidth='xl' sx={{ marginY: 4 }}>
-        <Paper sx={{ borderRadius: 5 }}>
-          <Grid container spacing={0} sx={{ height: 600 }}>
-            <Grid item xs={6} sx={{ paddingTop: "0px" }}>
-              <Paper
-                elevation={15}
-                sx={{
-                  borderRadius: 2,
-                  textAlign: "center",
-                }}>
-                <Box sx={{ width: "100%" }}>
-                  <Tabs
-                    value={value}
-                    onChange={handleChange}
-                    textColor='secondary'
-                    indicatorColor='secondary'
-                    aria-label='secondary tabs example'>
-                    <Tab value='one' label='Intro' />
-                    <Tab value='two' label='School' />
-                    <Tab value='three' label='Bing Bong' />
-                  </Tabs>
-                </Box>
-              </Paper>
-              {value === "one" && <Hello />}
-              {value === "two" && <School />}
-            </Grid>
-            <Grid
-              item
-              xs={6}
+        <Grid container spacing={0} sx={{ height: 600 }}>
+          <Grid item xs={6} sx={{ paddingTop: "0px" }}>
+            <Paper
+              elevation={15}
               sx={{
-                maxWidth: 500,
-                backgroundImage: `url(${mePic})`,
-                backgroundPosition: "center",
-              }}></Grid>
+                borderRadius: "15px 0px 0px 0px",
+                textAlign: "center",
+              }}>
+              <Box sx={{ width: "100%" }}>
+                <Tabs
+                  value={value}
+                  onChange={handleChange}
+                  textColor='darkTheme.palette.secondary.light'
+                  indicatorColor='secondary'
+                  aria-label='secondary tabs example'>
+                  <Tab value='one' label='Intro' />
+                  <Tab value='two' label='School' />
+                  <Tab value='three' label='Bing Bong' />
+                </Tabs>
+              </Box>
+            </Paper>
+            {value === "one" && <Hello />}
+            {value === "two" && <School />}
           </Grid>
-        </Paper>
+          <Grid
+            item
+            xs={6}
+            sx={{
+              maxWidth: 500,
+              backgroundImage: `url(${mePic})`,
+              backgroundPosition: "center",
+            }}></Grid>
+        </Grid>
       </Container>
     </>
   );

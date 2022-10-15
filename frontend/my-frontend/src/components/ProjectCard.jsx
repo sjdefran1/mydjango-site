@@ -134,7 +134,7 @@ export default function CoolCard() {
         <Typography
           variant='caption'
           color='theme.secondary'
-          sx={{ marginLeft: "auto" }}>
+          sx={{ marginLeft: "auto", color: "secondary.light" }}>
           More Features
         </Typography>
         <ExpandMore
