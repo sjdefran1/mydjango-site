@@ -53,6 +53,7 @@ export default function Intro() {
             xs={6}
             sx={{
               maxWidth: 500,
+              borderRadius: "0px 15px 15px 15px",
               backgroundImage: `url(${mePic})`,
               backgroundPosition: "center",
             }}></Grid>

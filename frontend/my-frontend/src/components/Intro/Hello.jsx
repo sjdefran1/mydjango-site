@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
 import GithubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import mtLine from "../../static/pics/moutainline.png";
 
 export default function Hello() {
   return (
@@ -14,8 +15,16 @@ export default function Hello() {
         sx={{
           textAlign: "center",
           borderRadius: "0px 0px 0px 15px",
+          borderColor: "secondary.main",
+          borderBottom: 1,
         }}>
-        <br></br>
+        <Box
+          sx={{
+            backgroundImage: `url(${mtLine})`,
+            backgroundPosition: "bottom",
+            height: "150px",
+          }}></Box>
+
         <Typography variant='h1'>Sam DeFrancisco</Typography>
         <Typography variant='h4' color='secondary.dark'>
           Software Engineer
