@@ -1,21 +1,11 @@
 import React from "react";
-import {
-  Grid,
-  AppBar,
-  Toolbar,
-  Button,
-  Typography,
-  Card,
-  CardActions,
-  CardContent,
-  Container,
-  Avatar,
-  CssBaseline,
-  Paper,
-} from "@mui/material";
+import Grid from "@mui/material/Grid";
+import Container from "@mui/material/Container";
+import CssBaseline from "@mui/material/CssBaseline";
 import ProjectCard from "./components/ProjectCard.jsx";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Intro from "./components/Intro/Intro.jsx";
+import TopBar from "./components/TopBar.jsx";
 
 const darkTheme = createTheme({
   palette: {
@@ -26,9 +16,6 @@ const darkTheme = createTheme({
       dark: "#3949ab",
     },
   },
-  typography: {
-    caption: {},
-  },
 });
 const App = () => {
   return (
@@ -36,11 +23,7 @@ const App = () => {
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
 
-        <AppBar position='relative'>
-          <Toolbar>
-            <Typography variant='h6'>My test Site</Typography>
-          </Toolbar>
-        </AppBar>
+        <TopBar />
         <main>
           <div>
             <Intro />
