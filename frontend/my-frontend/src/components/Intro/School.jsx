@@ -4,6 +4,8 @@ import Paper from "@mui/material/Paper";
 import Chip from "@mui/material/Chip";
 import Grid from "@mui/material/Grid";
 import Slide from "@mui/material/Slide";
+import Grow from "@mui/material/Grow";
+import Stack from "@mui/material/Stack";
 import Switch from "@mui/material/Switch";
 import Avatar from "@mui/material/Avatar";
 import cyPNG from "../../static/pics/isuCy.png";
@@ -18,9 +20,8 @@ export default function SlideFromContainer(props) {
   };
 
   return (
-    //<div ref={containerRef}>
     <>
-      <Slide direction='left' in={true} container={containerRef.current}>
+      <Grow direction='left' in={true} container={containerRef.current}>
         <Avatar
           src={cyPNG}
           alt='cy'
@@ -34,9 +35,9 @@ export default function SlideFromContainer(props) {
             overflow: "visible",
             padding: 0,
           }}></Avatar>
-      </Slide>
+      </Grow>
 
-      <Slide direction='left' in={true} container={containerRef.current}>
+      <Grow direction='left' in={true} container={containerRef.current}>
         <Paper
           elevation={7}
           sx={{ ml: "15%", mr: "15%", borderRadius: 2, textAlign: "center" }}>
@@ -54,18 +55,18 @@ export default function SlideFromContainer(props) {
             variant='h5'
             color='secondary.light'
             sx={{
-              marginTop: 1,
+              marginTop: 0.5,
               mb: 2,
               ml: "auto",
               mr: "auto",
               fontFamily: "Roboto Condensed",
             }}>
-            Junior
+            Graduating May 2024
           </Typography>
         </Paper>
-      </Slide>
+      </Grow>
 
-      <Slide direction='left' in={true} container={containerRef.current}>
+      <Grow direction='left' in={true} container={containerRef.current}>
         <Paper
           elevation={7}
           sx={{ ml: "5%", mr: "5%", borderRadius: 2, textAlign: "center" }}>
@@ -79,9 +80,26 @@ export default function SlideFromContainer(props) {
             }}>
             Some Relevant Course Work
           </Typography>
-          <Chip label='COMS309'></Chip>
+          <Grow in={true} timeout={1000} container={containerRef.current}>
+            <Stack
+              direction='row'
+              spacing={2}
+              sx={{ justifyContent: "center", mt: 1 }}>
+              <Chip label='COMS309'></Chip>
+              <Chip label='COMS309'></Chip>
+            </Stack>
+          </Grow>
+          <Grow in={true} timeout={1000} container={containerRef.current}>
+            <Stack
+              direction='row'
+              spacing={2}
+              sx={{ justifyContent: "center", mt: 1 }}>
+              <Chip label='COMS309'></Chip>
+              <Chip label='COMS309'></Chip>
+            </Stack>
+          </Grow>
         </Paper>
-      </Slide>
+      </Grow>
     </>
     //</div>
   );

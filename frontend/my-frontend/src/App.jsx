@@ -6,6 +6,7 @@ import ProjectCard from "./components/ProjectCard.jsx";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Intro from "./components/Intro/Intro.jsx";
 import TopBar from "./components/TopBar.jsx";
+import Projects from "./components/Projects.jsx";
 
 const darkTheme = createTheme({
   palette: {

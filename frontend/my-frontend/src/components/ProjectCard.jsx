@@ -27,6 +27,7 @@ import teamSelectGIF from "../static/pics/team-select.gif";
 import FeatureList from "./FeatureList.jsx";
 import BulletText from "./bulletText.jsx";
 import Box from "@mui/material/Box";
+//import { projects } from "./portfolio";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -39,7 +40,8 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-export default function CoolCard() {
+//const project = projects[0];
+export default function CoolCard(props) {
   const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {

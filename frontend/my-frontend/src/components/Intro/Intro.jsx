@@ -2,6 +2,7 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
+import Fade from "@mui/material/Fade";
 import Slide from "@mui/material/Slide";
 import Container from "@mui/material/Container";
 import Paper from "@mui/material/Paper";
@@ -10,6 +11,9 @@ import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import Grid from "@mui/material/Grid";
 import mePic from "../../static/pics/wide-green.jpg";
+import dmPic from "../../static/pics/dm.jpg";
+import samIsu1 from "../../static/pics/samISU1.jpg";
+import samIsu2 from "../../static/pics/samISU2.jpg";
 import FeatureList from "../FeatureList.jsx";
 import IntroTabs from "./IntroTabs.jsx";
 import Hello from "./Hello.jsx";
@@ -25,7 +29,7 @@ export default function Intro() {
   };
   return (
     <>
-      <Container maxWidth='xl' sx={{ my: 4 }}>
+      <Container maxWidth='xl' sx={{ mt: 3, mb: 4 }}>
         <Grid container spacing={0} sx={{ minHeight: "75%" }}>
           <Grid item xs={6} ref={gridRef} sx={{ paddingTop: "0px" }}>
             <Paper
@@ -54,17 +58,37 @@ export default function Intro() {
               </>
             )}
           </Grid>
-          <Grid
-            item
-            xs={6}
-            sx={{
-              maxWidth: "50%",
-              borderRadius: "0px 15px 15px 15px",
-              backgroundImage: `url(${mePic})`,
-              backgroundPosition: "center",
-              minHeight: 800,
-              maxHeight: "100%",
-            }}></Grid>
+          {value === "one" && (
+            <Fade in={true} timeout={1000}>
+              <Grid
+                item
+                xs={6}
+                sx={{
+                  maxWidth: "50%",
+                  borderRadius: "0px 15px 15px 15px",
+                  backgroundImage: `url(${mePic})`,
+                  backgroundPosition: "center",
+                  minHeight: 800,
+                  maxHeight: "100%",
+                }}></Grid>
+            </Fade>
+          )}
+
+          {value === "two" && (
+            <Fade in={true} timeout={1000}>
+              <Grid
+                item
+                xs={6}
+                sx={{
+                  maxWidth: "25%",
+                  borderRadius: "0px 15px 15px 15px",
+                  backgroundImage: `url(${dmPic})`,
+                  backgroundPosition: "center",
+                  minHeight: 800,
+                  maxHeight: "100%",
+                }}></Grid>
+            </Fade>
+          )}
         </Grid>
       </Container>
     </>

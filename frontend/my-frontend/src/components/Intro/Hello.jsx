@@ -2,6 +2,7 @@ import * as React from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import Grow from "@mui/material/Grow";
 import Paper from "@mui/material/Paper";
 import IconButton from "@mui/material/IconButton";
 import GithubIcon from "@mui/icons-material/GitHub";
@@ -28,76 +29,82 @@ export default function Hello() {
         }}>
         <br></br>
         <br></br>
-        <Paper elevation={7} sx={{ ml: "10%", mr: "10%", borderRadius: 5 }}>
-          <br></br>
-          <Typography
-            variant='h1'
-            component='p'
-            sx={{ fontFamily: "Roboto Condensed" }}>
-            Sam DeFrancisco
-          </Typography>
-          <Typography
-            variant='h4'
-            color='secondary.light'
-            sx={{ fontFamily: "Roboto Condensed" }}>
-            Software Engineer
-          </Typography>
-          <br></br>
-        </Paper>
-        <Stack
-          direction='row'
-          spacing={1}
-          sx={{ mt: 4, mb: 2, justifyContent: "center" }}>
-          <Link
-            href='https://github.com/sjdefran1'
-            target='_blank'
-            rel='noreferrer'>
-            <Button
-              variant='contained'
-              sx={{
-                ml: 1,
-                mr: 1,
-                fontFamily: "Roboto Condensed",
-              }}>
-              <GithubIcon color='action' sx={{ mr: 1 }} />
-              Github!
-            </Button>
-          </Link>
+        <Grow in={true} timeout={250}>
+          <Paper elevation={7} sx={{ ml: "10%", mr: "10%", borderRadius: 5 }}>
+            <br></br>
+            <Typography
+              variant='h1'
+              component='p'
+              sx={{ fontFamily: "Roboto Condensed" }}>
+              Sam DeFrancisco
+            </Typography>
+            <Typography
+              variant='h4'
+              color='secondary.light'
+              sx={{ fontFamily: "Roboto Condensed" }}>
+              Software Engineer
+            </Typography>
+            <br></br>
+          </Paper>
+        </Grow>
+        <Grow in={true} timeout={500}>
+          <Stack
+            direction='row'
+            spacing={1}
+            sx={{ mt: 4, mb: 2, justifyContent: "center" }}>
+            <Link
+              href='https://github.com/sjdefran1'
+              target='_blank'
+              rel='noreferrer'>
+              <Button
+                variant='contained'
+                sx={{
+                  ml: 1,
+                  mr: 1,
+                  fontFamily: "Roboto Condensed",
+                }}>
+                <GithubIcon color='action' sx={{ mr: 1 }} />
+                Github!
+              </Button>
+            </Link>
 
-          <Link
-            href='https://www.linkedin.com/in/sam-defrancisco-4373361b3/'
-            target='_blank'
-            rel='noreferrer'>
-            <Button
-              variant='contained'
-              color='secondary'
-              sx={{
-                ml: 1,
-                fontFamily: "Roboto Condensed",
-              }}>
-              <LinkedInIcon color='action' sx={{ mr: 1 }} /> LinkedIn
-            </Button>
-          </Link>
-        </Stack>
+            <Link
+              href='https://www.linkedin.com/in/sam-defrancisco-4373361b3/'
+              target='_blank'
+              rel='noreferrer'>
+              <Button
+                variant='contained'
+                color='secondary'
+                sx={{
+                  ml: 1,
+                  fontFamily: "Roboto Condensed",
+                }}>
+                <LinkedInIcon color='action' sx={{ mr: 1 }} /> LinkedIn
+              </Button>
+            </Link>
+          </Stack>
+        </Grow>
         <Divider variant='middle' color='grey' sx={{ ml: "34%", mr: "34%" }} />
 
-        <Stack
-          direction='column'
-          spacing={1}
-          sx={{ mt: 1, mb: 2, display: "inline-block" }}>
-          <Stack direction='row' spacing={1} sx={{ justifyContent: "left" }}>
-            <EmailIcon />
-            <Typography>sjdefran@gmail.com</Typography>
+        <Grow in={true} timeout={650}>
+          <Stack
+            direction='column'
+            spacing={1}
+            sx={{ mt: 1, mb: 2, display: "inline-block" }}>
+            <Stack direction='row' spacing={1} sx={{ justifyContent: "left" }}>
+              <EmailIcon />
+              <Typography>sjdefran@gmail.com</Typography>
+            </Stack>
+            <Stack direction='row' spacing={1} sx={{ justifyContent: "left" }}>
+              <PhoneIcon />
+              <Typography>(515)505-4146</Typography>
+            </Stack>
+            <br></br>
+            <Link href={defResume} target='_blank' rel='noreferrer'>
+              Resume PDF
+            </Link>
           </Stack>
-          <Stack direction='row' spacing={1} sx={{ justifyContent: "left" }}>
-            <PhoneIcon />
-            <Typography>(515)505-4146</Typography>
-          </Stack>
-          <br></br>
-          <Link href={defResume} target='_blank' rel='noreferrer'>
-            Resume PDF
-          </Link>
-        </Stack>
+        </Grow>
       </Paper>
     </>
   );
