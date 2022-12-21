@@ -2,6 +2,7 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
+import Slide from "@mui/material/Slide";
 import Container from "@mui/material/Container";
 import Paper from "@mui/material/Paper";
 import Avatar from "@mui/material/Avatar";
@@ -13,21 +14,22 @@ import FeatureList from "../FeatureList.jsx";
 import IntroTabs from "./IntroTabs.jsx";
 import Hello from "./Hello.jsx";
 import School from "./School.jsx";
+import cyPNG from "../../static/pics/isuCy.png";
 import "./Intro.css";
 
 export default function Intro() {
   const [value, setValue] = React.useState("one");
-
+  const gridRef = React.useRef(null);
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
   return (
     <>
-      <Container maxWidth='xl' sx={{ marginY: 4 }}>
-        <Grid container spacing={0} sx={{ height: 600 }}>
-          <Grid item xs={6} sx={{ paddingTop: "0px" }}>
+      <Container maxWidth='xl' sx={{ my: 4 }}>
+        <Grid container spacing={0} sx={{ minHeight: "75%" }}>
+          <Grid item xs={6} ref={gridRef} sx={{ paddingTop: "0px" }}>
             <Paper
-              elevation={15}
+              elevation={20}
               sx={{
                 borderRadius: "15px 0px 0px 0px",
                 textAlign: "center",
@@ -46,16 +48,22 @@ export default function Intro() {
               </Box>
             </Paper>
             {value === "one" && <Hello />}
-            {value === "two" && <School />}
+            {value === "two" && (
+              <>
+                <School gridRef={gridRef.current} />
+              </>
+            )}
           </Grid>
           <Grid
             item
             xs={6}
             sx={{
-              maxWidth: 500,
+              maxWidth: "50%",
               borderRadius: "0px 15px 15px 15px",
               backgroundImage: `url(${mePic})`,
               backgroundPosition: "center",
+              minHeight: 800,
+              maxHeight: "100%",
             }}></Grid>
         </Grid>
       </Container>

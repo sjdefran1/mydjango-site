@@ -28,19 +28,22 @@ export default function Hello() {
         }}>
         <br></br>
         <br></br>
-        <Typography
-          variant='h1'
-          component='p'
-          sx={{ fontFamily: "Roboto Condensed" }}>
-          Sam DeFrancisco
-        </Typography>
-        <Typography
-          variant='h4'
-          color='secondary.light'
-          sx={{ fontFamily: "Roboto Condensed" }}>
-          (Software Engineer)
-        </Typography>
-
+        <Paper elevation={7} sx={{ ml: "10%", mr: "10%", borderRadius: 5 }}>
+          <br></br>
+          <Typography
+            variant='h1'
+            component='p'
+            sx={{ fontFamily: "Roboto Condensed" }}>
+            Sam DeFrancisco
+          </Typography>
+          <Typography
+            variant='h4'
+            color='secondary.light'
+            sx={{ fontFamily: "Roboto Condensed" }}>
+            Software Engineer
+          </Typography>
+          <br></br>
+        </Paper>
         <Stack
           direction='row'
           spacing={1}
