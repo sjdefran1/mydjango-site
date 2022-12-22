@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useState } from "react";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -7,6 +8,8 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Intro from "./components/Intro/Intro.jsx";
 import TopBar from "./components/TopBar.jsx";
 import Projects from "./components/Projects.jsx";
+import WorkExperience from "./components/WorkExpierence.jsx";
+import ContentHeader from "./components/ContentHeader.jsx";
 
 const darkTheme = createTheme({
   palette: {
@@ -18,30 +21,76 @@ const darkTheme = createTheme({
     },
   },
 });
+
 const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const imgs = [
+      "./static/pics/python-5.svg",
+      "./static/pics/django.jpg",
+      "./static/pics/blue_go_sports.png",
+      "./static/pics/html5-2.svg",
+      "./static/pics/bootstrap.svg",
+      "./static/pics/isuCy.png",
+      "./static/pics/wide-green.jpg",
+      "./static/pics/dm.jpg",
+    ];
+    cacheImages(imgs);
+  }, []);
+
+  const cacheImages = async (srcArray) => {
+    const promises = await srcArray.map((src) => {
+      return new Promise(function (resolve, reject) {
+        const img = new Image();
+
+        img.src = src;
+        img.onload = resolve();
+        img.onerror = reject();
+      });
+    });
+
+    await Promise.all(promises);
+    setIsLoading(false);
+  };
+
   return (
     <>
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
-
-        <TopBar />
-        <main>
-          <div>
-            <Intro />
-            <Container maxWidth='md'>
-              <Grid container spacing={2}>
-                <Grid item xs={6}>
-                  <ProjectCard />
-                </Grid>
-                <Grid item xs={6}>
-                  <ProjectCard />
-                </Grid>
-              </Grid>
-            </Container>
-          </div>
-          <br></br>
-          <br></br>
-        </main>
+        {isLoading ? (
+          <div></div>
+        ) : (
+          <>
+            <TopBar />
+            <main>
+              <div>
+                <Intro />
+                <ContentHeader name='Projects' />
+                <Container maxWidth='md'>
+                  <Grid container spacing={2}>
+                    <Grid item xs={6}>
+                      <ProjectCard />
+                    </Grid>
+                    <Grid item xs={6}>
+                      <ProjectCard />
+                    </Grid>
+                  </Grid>
+                  <br></br>
+                  <br></br>
+                </Container>
+                <ContentHeader name='Work Expierence' />
+                <Container maxWidth='lg'>
+                  <WorkExperience
+                    company='ACME Inc.'
+                    jobTitle='Software Engineer'
+                    description='Worked on various projects including a project to build a new CRM system for the company.'
+                  />
+                </Container>
+              </div>
+            </main>
+          </>
+        )}
       </ThemeProvider>
     </>
   );

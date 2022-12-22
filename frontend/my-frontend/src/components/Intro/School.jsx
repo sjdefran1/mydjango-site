@@ -21,12 +21,13 @@ export default function SlideFromContainer(props) {
 
   return (
     <>
+      {/* <Paper elevation={2} sx={{ mt: 0 }}> */}
       <Grow direction='left' in={true} container={containerRef.current}>
         <Avatar
           src={cyPNG}
           alt='cy'
           sx={{
-            marginTop: 2,
+            marginTop: 1,
             ml: "auto",
             mr: "auto",
             height: 300,
@@ -40,7 +41,13 @@ export default function SlideFromContainer(props) {
       <Grow direction='left' in={true} container={containerRef.current}>
         <Paper
           elevation={7}
-          sx={{ ml: "15%", mr: "15%", borderRadius: 2, textAlign: "center" }}>
+          sx={{
+            ml: "15%",
+            mr: "15%",
+            borderRadius: 2,
+            textAlign: "center",
+            minHeight: "10%",
+          }}>
           <Typography
             variant='h4'
             sx={{
@@ -67,13 +74,23 @@ export default function SlideFromContainer(props) {
       </Grow>
 
       <Grow direction='left' in={true} container={containerRef.current}>
+        {/* Scroll when reszied */}
         <Paper
           elevation={7}
-          sx={{ ml: "5%", mr: "5%", borderRadius: 2, textAlign: "center" }}>
+          sx={{
+            ml: "5%",
+            mr: "5%",
+            maxHeight: "25%",
+            maxWidth: "100%",
+            borderRadius: 2,
+            textAlign: "center",
+            overflowY: "auto",
+            overflowX: "auto",
+          }}>
           <Typography
             variant='h4'
             sx={{
-              marginTop: 2,
+              marginTop: 1,
               ml: "auto",
               mr: "auto",
               fontFamily: "Roboto Condensed",
@@ -85,8 +102,8 @@ export default function SlideFromContainer(props) {
               direction='row'
               spacing={2}
               sx={{ justifyContent: "center", mt: 1 }}>
-              <Chip label='COMS309'></Chip>
-              <Chip label='COMS309'></Chip>
+              <Chip label='COMS227: OOP'></Chip>
+              <Chip label='COMS228: Datastructers & Algorithms'></Chip>
             </Stack>
           </Grow>
           <Grow in={true} timeout={1000} container={containerRef.current}>
@@ -94,13 +111,23 @@ export default function SlideFromContainer(props) {
               direction='row'
               spacing={2}
               sx={{ justifyContent: "center", mt: 1 }}>
-              <Chip label='COMS309'></Chip>
-              <Chip label='COMS309'></Chip>
+              <Chip label='COMS309: Android Development'></Chip>
+              <Chip label='CPRE288: Embedded Programming'></Chip>
+              <Chip label='COMS363: DBMS'></Chip>
+            </Stack>
+          </Grow>
+          <Grow in={true} timeout={1000} container={containerRef.current}>
+            <Stack
+              direction='row'
+              spacing={2}
+              sx={{ justifyContent: "center", mt: 1, mb: 2 }}>
+              <Chip label='COMS319: Web Development'></Chip>
+              <Chip label='CPRE288: Embedded Programming'></Chip>
             </Stack>
           </Grow>
         </Paper>
       </Grow>
+      {/* </Paper> */}
     </>
-    //</div>
   );
 }

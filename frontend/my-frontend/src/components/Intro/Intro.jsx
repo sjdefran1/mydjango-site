@@ -12,13 +12,10 @@ import Divider from "@mui/material/Divider";
 import Grid from "@mui/material/Grid";
 import mePic from "../../static/pics/wide-green.jpg";
 import dmPic from "../../static/pics/dm.jpg";
-import samIsu1 from "../../static/pics/samISU1.jpg";
-import samIsu2 from "../../static/pics/samISU2.jpg";
 import FeatureList from "../FeatureList.jsx";
 import IntroTabs from "./IntroTabs.jsx";
 import Hello from "./Hello.jsx";
 import School from "./School.jsx";
-import cyPNG from "../../static/pics/isuCy.png";
 import "./Intro.css";
 
 export default function Intro() {
