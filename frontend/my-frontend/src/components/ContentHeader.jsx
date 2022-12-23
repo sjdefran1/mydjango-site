@@ -17,7 +17,10 @@ function ContentHeader({ name }) {
 
           textAlign: "center",
         }}>
-        <Typography variant='h3' p sx={{ opacity: "100%" }}>
+        <Typography
+          variant='h3'
+          p
+          sx={{ opacity: "100%", fontFamily: "Roboto Condensed" }}>
           {name}
         </Typography>
       </Paper>

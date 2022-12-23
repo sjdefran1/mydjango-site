@@ -42,9 +42,21 @@ export default function Intro() {
                   textColor='darkTheme.palette.secondary.light'
                   indicatorColor='secondary'
                   aria-label='secondary tabs example'>
-                  <Tab value='one' label='Intro' />
-                  <Tab value='two' label='School' />
-                  <Tab value='three' label='Bing Bong' />
+                  <Tab
+                    value='one'
+                    label='Intro'
+                    sx={{ fontFamily: "Roboto Condensed" }}
+                  />
+                  <Tab
+                    value='two'
+                    label='School'
+                    sx={{ fontFamily: "Roboto Condensed" }}
+                  />
+                  <Tab
+                    value='three'
+                    label='Bing Bong'
+                    sx={{ fontFamily: "Roboto Condensed" }}
+                  />
                 </Tabs>
               </Box>
             </Paper>

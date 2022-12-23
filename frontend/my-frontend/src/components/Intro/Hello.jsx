@@ -90,14 +90,23 @@ export default function Hello() {
           <Stack
             direction='column'
             spacing={1}
-            sx={{ mt: 1, mb: 2, display: "inline-block" }}>
+            sx={{
+              mt: 1,
+              mb: 2,
+              display: "inline-block",
+              fontFamily: "Roboto Condensed",
+            }}>
             <Stack direction='row' spacing={1} sx={{ justifyContent: "left" }}>
               <EmailIcon />
-              <Typography>sjdefran@gmail.com</Typography>
+              <Typography sx={{ fontFamily: "Roboto Condensed" }}>
+                sjdefran@gmail.com
+              </Typography>
             </Stack>
             <Stack direction='row' spacing={1} sx={{ justifyContent: "left" }}>
               <PhoneIcon />
-              <Typography>(515)505-4146</Typography>
+              <Typography sx={{ fontFamily: "Roboto Condensed" }}>
+                (515)505-4146
+              </Typography>
             </Stack>
             <br></br>
             <Link href={defResume} target='_blank' rel='noreferrer'>

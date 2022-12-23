@@ -9,7 +9,10 @@ import Intro from "./components/Intro/Intro.jsx";
 import TopBar from "./components/TopBar.jsx";
 import Projects from "./components/Projects.jsx";
 import WorkExperience from "./components/WorkExpierence.jsx";
+import WorkExpierenceS from "./components/WorkExpeierenceS.jsx";
 import ContentHeader from "./components/ContentHeader.jsx";
+import dragonsSvg from "./static/pics/dragons2.jpg";
+import amazonSvg from "./static/pics/amazon.svg";
 
 const darkTheme = createTheme({
   palette: {
@@ -80,13 +83,37 @@ const App = () => {
                   <br></br>
                 </Container>
                 <ContentHeader name='Work Expierence' />
-                <Container maxWidth='lg'>
-                  <WorkExperience
-                    company='ACME Inc.'
-                    jobTitle='Software Engineer'
-                    description='Worked on various projects including a project to build a new CRM system for the company.'
-                  />
+                <Container maxWidth='xl'>
+                  <Grid container spacing={5}>
+                    <Grid item xs={6}>
+                      <WorkExperience
+                        company='ACME Inc.'
+                        jobTitle='Software Engineer'
+                        description='Worked on various projects including a project to build a new CRM system for the company.'
+                      />
+                    </Grid>
+                    <Grid item xs={6}>
+                      <WorkExpierenceS
+                        company='Amazon Logistics'
+                        jobTitle='Learning Ambassador'
+                        description='Managed same day packaage delivery crew'
+                        image={amazonSvg}
+                        iy={100}
+                        ix={100}
+                      />
+                      <br></br>
+                      <WorkExpierenceS
+                        company='Johnston Community School District'
+                        jobTitle='Childcare Provider'
+                        description='Responsible for looking after group of kids.'
+                        image={dragonsSvg}
+                        iy={100}
+                        ix={100}
+                      />
+                    </Grid>
+                  </Grid>
                 </Container>
+                <br></br>
               </div>
             </main>
           </>
