@@ -19,11 +19,27 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 function SkillSummary() {
   const containerRef = useRef(null);
   const [expanded, setExpanded] = React.useState(false);
+  const [expanded2, setExpanded2] = React.useState(false);
+  const [expanded3, setExpanded3] = React.useState(false);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-    if (expanded) {
-      containerRef.current.scrollIntoView({ behavior: "smooth" });
+  const handleExpandClick = (nums) => {
+    if (nums === 1) {
+      setExpanded(!expanded);
+      if (expanded) {
+        containerRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    if (nums === 2) {
+      setExpanded2(!expanded2);
+      if (expanded2) {
+        containerRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    if (nums === 3) {
+      setExpanded3(!expanded3);
+      if (expanded3) {
+        containerRef.current.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
 
@@ -37,17 +53,19 @@ function SkillSummary() {
             Summary of Skills
           </Typography>
         </Divider>
-        <Accordion onChange={handleExpandClick} ref={containerRef}>
+        <Accordion onChange={() => handleExpandClick(1)} ref={containerRef}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls='panel1a-content'
             id='panel1a-header'>
             <Typography>Languages</Typography>
           </AccordionSummary>
+
           <AccordionDetails>
             <Divider>
               <Chip label='Most Expierence' variant='outlined'></Chip>
             </Divider>
+            <br></br>
             <Grow in={expanded} container={containerRef.current} timeout={750}>
               <Stack
                 spacing={1}
@@ -68,6 +86,7 @@ function SkillSummary() {
                 sx={{ textAlign: "center" }}
               />
             </Divider>
+            <br></br>
             <Grow in={expanded} container={containerRef.current} timeout={950}>
               <Stack
                 spacing={1}
@@ -83,6 +102,7 @@ function SkillSummary() {
             <Divider>
               <Chip label='Less Expierence' variant='outlined'></Chip>
             </Divider>
+            <br></br>
             <Grow in={expanded} container={containerRef.current} timeout={750}>
               <Stack
                 spacing={1}
@@ -104,7 +124,7 @@ function SkillSummary() {
                 sx={{ textAlign: "center" }}
               />
             </Divider>
-
+            <br></br>
             <Grow in={expanded} container={containerRef.current} timeout={950}>
               <Stack
                 spacing={1}
@@ -116,7 +136,8 @@ function SkillSummary() {
             </Grow>
           </AccordionDetails>
         </Accordion>
-        <Accordion>
+
+        <Accordion onChange={() => handleExpandClick(2)} ref={containerRef}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls='panel2a-content'
@@ -124,11 +145,25 @@ function SkillSummary() {
             <Typography>Developer Tools</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
-            </Typography>
+            <Divider inset sx={{ ml: "30%", mr: "30%" }}>
+              <Chip
+                label="IDE's"
+                variant='outlined'
+                color='success'
+                sx={{ textAlign: "center" }}
+              />
+            </Divider>
+            <Grow in={expanded2} container={containerRef.current} timeout={750}>
+              <Stack
+                spacing={1}
+                direction='row'
+                sx={{ justifyContent: "center", mx: "auto", my: 1 }}>
+                <Chip label='VScode' color='secondary' />
+                <Chip label='Eclipse' color='info' />
+                <Chip label='Spyder3' color='error' />
+                <Chip label='Verilog' color='secondary' />
+              </Stack>
+            </Grow>
           </AccordionDetails>
         </Accordion>
         <Accordion>
