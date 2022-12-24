@@ -13,6 +13,7 @@ import WorkExpierenceS from "./components/WorkExpeierenceS.jsx";
 import ContentHeader from "./components/ContentHeader.jsx";
 import dragonsSvg from "./static/pics/dragons2.jpg";
 import amazonSvg from "./static/pics/amazon.svg";
+import SkillSummary from "./components/SkillSummary.jsx";
 
 const darkTheme = createTheme({
   palette: {
@@ -110,6 +111,7 @@ const App = () => {
                         iy={100}
                         ix={100}
                       />
+                      <SkillSummary />
                     </Grid>
                   </Grid>
                 </Container>

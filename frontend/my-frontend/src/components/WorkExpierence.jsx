@@ -40,7 +40,7 @@ function WorkExperience({ company, jobTitle, description }) {
 
         <CardContent>
           <Divider textAlign='center' variant='fullWidth'>
-            <Chip label='About' />
+            <Chip label='About' variant='outlined' />
           </Divider>
           <Box sx={{ textAlign: "center" }}>
             <Typography variant='subtitle1' sx={{ marginY: 1 }} paragraph>
@@ -52,7 +52,7 @@ function WorkExperience({ company, jobTitle, description }) {
           </Box>
 
           <Divider textAlign='center' variant='fullWidth'>
-            <Chip label='Expierence' />
+            <Chip label='Expierence' variant='outlined' />
           </Divider>
 
           <Box sx={{ textAlign: "center" }}>

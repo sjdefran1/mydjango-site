@@ -20,7 +20,11 @@ function ContentHeader({ name }) {
         <Typography
           variant='h3'
           p
-          sx={{ opacity: "100%", fontFamily: "Roboto Condensed" }}>
+          sx={{
+            opacity: "100%",
+            fontFamily: "Roboto Condensed",
+            color: "secondary.light",
+          }}>
           {name}
         </Typography>
       </Paper>
