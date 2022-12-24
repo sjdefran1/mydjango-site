@@ -14,6 +14,7 @@ import ContentHeader from "./components/ContentHeader.jsx";
 import dragonsSvg from "./static/pics/dragons2.jpg";
 import amazonSvg from "./static/pics/amazon.svg";
 import SkillSummary from "./components/SkillSummary.jsx";
+import CyRate from "./components/CyRate.jsx";
 
 const darkTheme = createTheme({
   palette: {
@@ -77,7 +78,7 @@ const App = () => {
                       <ProjectCard />
                     </Grid>
                     <Grid item xs={6}>
-                      <ProjectCard />
+                      <CyRate />
                     </Grid>
                   </Grid>
                   <br></br>
