@@ -53,7 +53,10 @@ function SkillSummary() {
             Summary of Skills
           </Typography>
         </Divider>
-        <Accordion onChange={() => handleExpandClick(1)} ref={containerRef}>
+        <Accordion
+          onChange={() => handleExpandClick(1)}
+          ref={containerRef}
+          square>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls='panel1a-content'
@@ -145,6 +148,29 @@ function SkillSummary() {
             <Typography>Developer Tools</Typography>
           </AccordionSummary>
           <AccordionDetails>
+            <br></br>
+            <Divider inset sx={{ ml: "30%", mr: "30%" }}>
+              <Chip
+                label='Dev Tools'
+                variant='outlined'
+                color='success'
+                sx={{ textAlign: "center" }}
+              />
+            </Divider>
+            <br></br>
+            <Grow in={expanded2} container={containerRef.current} timeout={750}>
+              <Stack
+                spacing={1}
+                direction='row'
+                sx={{ justifyContent: "center", mx: "auto", my: 1 }}>
+                <Chip label='Git Source Control' color='secondary' />
+                <Chip label='CI/CD' color='info' />
+                <Chip label='Postman' color='error' />
+                <Chip label='MySQLWorkbench' color='secondary' />
+                <Chip label='Linux' color='info' />
+              </Stack>
+            </Grow>
+            <br></br>
             <Divider inset sx={{ ml: "30%", mr: "30%" }}>
               <Chip
                 label="IDE's"
@@ -153,6 +179,7 @@ function SkillSummary() {
                 sx={{ textAlign: "center" }}
               />
             </Divider>
+            <br></br>
             <Grow in={expanded2} container={containerRef.current} timeout={750}>
               <Stack
                 spacing={1}
