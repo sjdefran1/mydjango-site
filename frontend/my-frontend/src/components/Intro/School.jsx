@@ -49,7 +49,7 @@ export default function SlideFromContainer(props) {
             minHeight: "10%",
           }}>
           <Typography
-            variant='h4'
+            variant='h3'
             sx={{
               marginTop: 2,
               ml: "auto",
@@ -59,7 +59,7 @@ export default function SlideFromContainer(props) {
             Iowa State University
           </Typography>
           <Typography
-            variant='h5'
+            variant='h4'
             color='secondary.light'
             sx={{
               marginTop: 0.5,

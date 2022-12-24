@@ -54,7 +54,7 @@ export default function Intro() {
                   />
                   <Tab
                     value='three'
-                    label='Bing Bong'
+                    label='More Me'
                     sx={{ fontFamily: "Roboto Condensed" }}
                   />
                 </Tabs>

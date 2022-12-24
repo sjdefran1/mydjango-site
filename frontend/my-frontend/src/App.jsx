@@ -15,6 +15,7 @@ import dragonsSvg from "./static/pics/dragons2.jpg";
 import amazonSvg from "./static/pics/amazon.svg";
 import SkillSummary from "./components/SkillSummary.jsx";
 import CyRate from "./components/CyRate.jsx";
+import Site from "./components/Site.jsx";
 
 const darkTheme = createTheme({
   palette: {
@@ -72,19 +73,22 @@ const App = () => {
               <div>
                 <Intro />
                 <ContentHeader name='Projects' />
-                <Container maxWidth='md'>
+                <Container maxWidth='lg'>
                   <Grid container spacing={2}>
-                    <Grid item xs={6}>
+                    <Grid item xs={4}>
                       <ProjectCard />
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={4}>
                       <CyRate />
+                    </Grid>
+                    <Grid item xs={4}>
+                      <Site />
                     </Grid>
                   </Grid>
                   <br></br>
                   <br></br>
                 </Container>
-                <ContentHeader name='Work Expierence' />
+                <ContentHeader name='Work Experience' />
                 <Container maxWidth='xl'>
                   <Grid container spacing={5}>
                     <Grid item xs={6}>

@@ -56,7 +56,8 @@ function SkillSummary() {
         <Accordion
           onChange={() => handleExpandClick(1)}
           ref={containerRef}
-          square>
+          square
+          TransitionProps={{ unmountOnExit: true }}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls='panel1a-content'
@@ -140,7 +141,10 @@ function SkillSummary() {
           </AccordionDetails>
         </Accordion>
 
-        <Accordion onChange={() => handleExpandClick(2)} ref={containerRef}>
+        <Accordion
+          onChange={() => handleExpandClick(2)}
+          ref={containerRef}
+          TransitionProps={{ unmountOnExit: true }}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls='panel2a-content'
@@ -148,7 +152,6 @@ function SkillSummary() {
             <Typography>Developer Tools</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <br></br>
             <Divider inset sx={{ ml: "30%", mr: "30%" }}>
               <Chip
                 label='Dev Tools'
@@ -163,11 +166,12 @@ function SkillSummary() {
                 spacing={1}
                 direction='row'
                 sx={{ justifyContent: "center", mx: "auto", my: 1 }}>
-                <Chip label='Git Source Control' color='secondary' />
+                <Chip label='Git' color='secondary' />
                 <Chip label='CI/CD' color='info' />
                 <Chip label='Postman' color='error' />
                 <Chip label='MySQLWorkbench' color='secondary' />
                 <Chip label='Linux' color='info' />
+                <Chip label='LaTeX' color='success' />
               </Stack>
             </Grow>
             <br></br>
@@ -193,7 +197,7 @@ function SkillSummary() {
             </Grow>
           </AccordionDetails>
         </Accordion>
-        <Accordion>
+        <Accordion TransitionProps={{ unmountOnExit: true }}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls='panel2a-content'

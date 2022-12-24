@@ -22,14 +22,15 @@ import pythonSVG from "../static/pics/python-5.svg";
 import javaSvg from "../static/pics/javaSvg.svg";
 import springbootSvg from "../static/pics/springboot.svg";
 import djangoJPG from "../static/pics/django.jpg";
+import chatJPG from "../static/pics/chatGPT.jpg";
 import goSportsLogo from "../static/pics/blue_go_sports.png";
-import cyRateLogo from "../static/pics/cyrate2-1.png";
-import htmlSVG from "../static/pics/html5-2.svg";
+import cyRateLogo from "../static/pics/CyRate.png";
+import reactSvg from "../static/pics/react.png";
+import sjdSvg from "../static/pics/sjd.png";
 import bootStrapSVG from "../static/pics/bootstrap.svg";
 import teamSelectGIF from "../static/pics/team-select.gif";
 import FeatureList from "./FeatureList.jsx";
 import BulletText from "./bulletText.jsx";
-import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
 //import { projects } from "./portfolio";
 
@@ -58,14 +59,14 @@ export default function CoolCard(props) {
         avatar={
           <>
             <Avatar
-              src={cyRateLogo}
+              src={sjdSvg}
               sx={{ width: 100, height: 100 }}
               aria-label='python'
             />
           </>
         }
-        title='CyRate'
-        subheader='Full Stack Android App'
+        title='This Site!'
+        subheader='Full Stack Web App'
       />
       <Divider textAlign='center' variant='fullWidth'>
         <Chip label='Tech Stack' />
@@ -80,28 +81,30 @@ export default function CoolCard(props) {
               justifyContent: "center",
             }}>
             <IconButton aria-label='java'>
-              <a
-                target='_blank'
-                rel='noreferrer'
-                href='https://www.java.com/en/'>
-                <Avatar src={javaSvg} aria-label='java' />
+              <a target='_blank' rel='noreferrer' href='https://reactjs.org/'>
+                <Avatar src={reactSvg} aria-label='java' />
               </a>
             </IconButton>
             <IconButton aria-label='springboot'>
               <a
-                href='https://spring.io/projects/spring-boot'
+                href='https://www.djangoproject.com/'
                 target='_blank'
                 rel='noreferrer'>
-                <Avatar src={springbootSvg} aria-label='spring' sx={{}} />
+                <Avatar src={djangoJPG} aria-label='spring' sx={{}} />
+              </a>
+            </IconButton>
+            <IconButton aria-label='springboot'>
+              <a
+                href='https://openai.com/blog/chatgpt/'
+                target='_blank'
+                rel='noreferrer'>
+                <Avatar src={chatJPG} aria-label='spring' sx={{}} />
               </a>
             </IconButton>
           </Stack>
           <Box sx={{ textAlign: "center" }}>
             <Typography variant='subtitle1' sx={{ marginY: 1 }} paragraph>
-              Cyrate provides information on the best restaurants, bars, and
-              activites around the city of Ames. Cyrate utilizes a springboot
-              backend, a MySql Database, and a frontend that was created by
-              teamates using android studio.
+              This website was created with React, Django, and OpenAI's ChaptGPT
             </Typography>
           </Box>
         </>
@@ -109,64 +112,13 @@ export default function CoolCard(props) {
       <CardActions disableSpacing>
         <IconButton aria-label='Github Link'>
           <a
-            href='https://github.com/sjdefran1/GoSports'
+            href='https://github.com/sjdefran1/mydjango-site'
             target='_blank'
             rel='noreferrer'>
             <GitHubIcon color='action' />
           </a>
         </IconButton>
-
-        <Link
-          href='https://www.youtube.com/watch?v=w_3M2IuUfWA&list=PL6BdlkdKLEB_pYmF7uwubfK99t4KT4Xoe&index=8&ab_channel=AlexOng'
-          target='_blank'
-          rel='noreferrer'
-          underline='hover'
-          sx={{ color: "secondary.light" }}>
-          Demo Video
-        </Link>
-
-        <Typography
-          variant='caption'
-          color='theme.secondary'
-          sx={{ marginLeft: "auto", color: "secondary.light" }}>
-          More Features
-        </Typography>
-        <ExpandMore
-          expand={expanded}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
-          aria-label='show more'>
-          <ExpandMoreIcon />
-        </ExpandMore>
       </CardActions>
-      <Collapse
-        in={expanded}
-        orientation='vertical'
-        timeout='auto'
-        unmountOnExit>
-        <Divider variant='middle' />
-
-        <CardContent>
-          <>
-            <Stack
-              direction='column'
-              spacing={0.5}
-              sx={{
-                justifyContent: "center",
-              }}>
-              <BulletText text='Multiple account types and privlleges (Owner, Admin, Guest, Normal)' />
-              <BulletText text='View resturant/bar information (hours, locations w/ google maps API, menus)' />
-              <BulletText text='Favorite feature for resturants, access your favorites by account' />
-              <BulletText text='Leave reviews for different places, have access to all reviews you have left' />
-              <BulletText text='Live comment threads utilizing websockets.' />
-              <BulletText text='CRUD capabilities for all features' />
-            </Stack>
-            <br></br>
-            <Typography variant='h6'>Teamates</Typography>
-            <BulletText text='Anbu Krishnan, Alex Ong, Megan Eberle' />
-          </>
-        </CardContent>
-      </Collapse>
     </Card>
   );
 }

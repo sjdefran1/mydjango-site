@@ -52,7 +52,7 @@ function WorkExperience({ company, jobTitle, description }) {
           </Box>
 
           <Divider textAlign='center' variant='fullWidth'>
-            <Chip label='Expierence' variant='outlined' color='primary' />
+            <Chip label='Experience' variant='outlined' color='primary' />
           </Divider>
 
           <Box sx={{ textAlign: "center" }}>

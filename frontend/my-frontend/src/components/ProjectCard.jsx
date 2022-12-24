@@ -130,9 +130,6 @@ export default function CoolCard(props) {
           </a>
         </IconButton>
 
-        <IconButton aria-label='share'>
-          <ShareIcon />
-        </IconButton>
         <Typography
           variant='caption'
           color='theme.secondary'
@@ -156,7 +153,6 @@ export default function CoolCard(props) {
 
         <CardContent>
           <>
-            <Typography variant='h6'>Features</Typography>
             <Stack
               direction='column'
               spacing={0.5}
@@ -176,6 +172,9 @@ export default function CoolCard(props) {
               <BulletText text='Search for your favorite player or team' />
               <BulletText text='Create an account' />
             </Stack>
+            <br></br>
+            <Typography variant='h6'>Teamates</Typography>
+            <BulletText text='Kaya Zdan, Kyle Rooney, Shannon McCarthy' />
           </>
         </CardContent>
       </Collapse>

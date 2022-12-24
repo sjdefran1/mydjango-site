@@ -14,7 +14,17 @@ export default function TitleBar() {
           <Button
             variant='text'
             sx={{ ml: 2, borderBottom: 2, borderColor: "secondary" }}>
-            Top
+            Intro
+          </Button>
+          <Button
+            variant='text'
+            sx={{ ml: 2, borderBottom: 2, borderColor: "secondary" }}>
+            Projects
+          </Button>
+          <Button
+            variant='text'
+            sx={{ ml: 2, borderBottom: 2, borderColor: "secondary" }}>
+            Work Experience
           </Button>
         </Toolbar>
       </AppBar>
