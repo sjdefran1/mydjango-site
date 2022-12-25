@@ -26,19 +26,19 @@ function SkillSummary() {
     if (nums === 1) {
       setExpanded(!expanded);
       if (expanded) {
-        containerRef.current.scrollIntoView({ behavior: "smooth" });
+        //containerRef.current.scrollIntoView({ behavior: "smooth" });
       }
     }
     if (nums === 2) {
       setExpanded2(!expanded2);
       if (expanded2) {
-        containerRef.current.scrollIntoView({ behavior: "smooth" });
+        //containerRef.current.scrollIntoView({ behavior: "smooth" });
       }
     }
     if (nums === 3) {
       setExpanded3(!expanded3);
       if (expanded3) {
-        containerRef.current.scrollIntoView({ behavior: "smooth" });
+        //containerRef.current.scrollIntoView({ behavior: "smooth" });
       }
     }
   };

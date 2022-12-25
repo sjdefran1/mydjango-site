@@ -30,7 +30,7 @@ export default function Intro() {
         <Grid container spacing={0} sx={{ minHeight: "75%" }}>
           <Grid item xs={6} ref={gridRef} sx={{ paddingTop: "0px" }}>
             <Paper
-              elevation={20}
+              elevation={24}
               sx={{
                 borderRadius: "15px 0px 0px 0px",
                 textAlign: "center",

@@ -16,6 +16,7 @@ import amazonSvg from "./static/pics/amazon.svg";
 import SkillSummary from "./components/SkillSummary.jsx";
 import CyRate from "./components/CyRate.jsx";
 import Site from "./components/Site.jsx";
+import OtherProjects from "./components/OtherProjects.jsx";
 
 const darkTheme = createTheme({
   palette: {
@@ -24,6 +25,40 @@ const darkTheme = createTheme({
       main: "#5c6bc0",
       light: "#9fa8da",
       dark: "#3949ab",
+    },
+  },
+
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          scrollbarColor: "#6b6b6b #2b2b2b",
+          "&::-webkit-scrollbar, & *::-webkit-scrollbar": {
+            backgroundColor: "#2b2b2b",
+          },
+          "&::-webkit-scrollbar-thumb, & *::-webkit-scrollbar-thumb": {
+            borderRadius: 8,
+            backgroundColor: "#6b6b6b",
+            minHeight: 24,
+            border: "3px solid #2b2b2b",
+          },
+          "&::-webkit-scrollbar-thumb:focus, & *::-webkit-scrollbar-thumb:focus":
+            {
+              backgroundColor: "#959595",
+            },
+          "&::-webkit-scrollbar-thumb:active, & *::-webkit-scrollbar-thumb:active":
+            {
+              backgroundColor: "#959595",
+            },
+          "&::-webkit-scrollbar-thumb:hover, & *::-webkit-scrollbar-thumb:hover":
+            {
+              backgroundColor: "#959595",
+            },
+          "&::-webkit-scrollbar-corner, & *::-webkit-scrollbar-corner": {
+            backgroundColor: "#2b2b2b",
+          },
+        },
+      },
     },
   },
 });
@@ -72,33 +107,18 @@ const App = () => {
             <main>
               <div>
                 <Intro />
-                <ContentHeader name='Projects' />
-                <Container maxWidth='lg'>
-                  <Grid container spacing={2}>
-                    <Grid item xs={4}>
-                      <ProjectCard />
-                    </Grid>
-                    <Grid item xs={4}>
-                      <CyRate />
-                    </Grid>
-                    <Grid item xs={4}>
-                      <Site />
-                    </Grid>
-                  </Grid>
-                  <br></br>
-                  <br></br>
-                </Container>
+
                 <ContentHeader name='Work Experience' />
                 <Container maxWidth='xl'>
-                  <Grid container spacing={5}>
-                    <Grid item xs={6}>
+                  <Grid container spacing={5} wrap='wrap'>
+                    <Grid item xs={12} md={6}>
                       <WorkExperience
                         company='ACME Inc.'
                         jobTitle='Software Engineer'
                         description='Worked on various projects including a project to build a new CRM system for the company.'
                       />
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={12} md={6}>
                       <WorkExpierenceS
                         company='Amazon Logistics'
                         jobTitle='Learning Ambassador'
@@ -121,6 +141,23 @@ const App = () => {
                   </Grid>
                 </Container>
                 <br></br>
+                <ContentHeader name='Projects' />
+                <Container maxWidth='lg'>
+                  <Grid container spacing={2}>
+                    <Grid item xs={12} md={4}>
+                      <ProjectCard />
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                      <CyRate />
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                      <Site />
+                    </Grid>
+                  </Grid>
+                  <OtherProjects />
+                  <br></br>
+                  <br></br>
+                </Container>
               </div>
             </main>
           </>
