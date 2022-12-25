@@ -74,10 +74,10 @@ function WorkExperience({ company, jobTitle, description }) {
               <a
                 target='_blank'
                 rel='noreferrer'
-                href='https://www.python.org/'>
+                href='https://www.java.com/en/'>
                 <Avatar
                   src={javaSvg}
-                  aria-label='python'
+                  aria-label='javalogo'
                   sx={{ height: 50, width: 50 }}
                 />
               </a>
@@ -86,10 +86,10 @@ function WorkExperience({ company, jobTitle, description }) {
               <a
                 target='_blank'
                 rel='noreferrer'
-                href='https://www.python.org/'>
+                href='https://spring.io/projects/spring-boot'>
                 <Avatar
                   src={springSvg}
-                  aria-label='python'
+                  aria-label='springLogo'
                   sx={{ height: 50, width: 50 }}
                 />
               </a>

@@ -17,6 +17,7 @@ import SkillSummary from "./components/SkillSummary.jsx";
 import CyRate from "./components/CyRate.jsx";
 import Site from "./components/Site.jsx";
 import OtherProjects from "./components/OtherProjects.jsx";
+import ImageCollage from "./components/Intro/ImageCollage.jsx";
 
 const darkTheme = createTheme({
   palette: {
@@ -110,7 +111,7 @@ const App = () => {
 
                 <ContentHeader name='Work Experience' />
                 <Container maxWidth='xl'>
-                  <Grid container spacing={5} wrap='wrap'>
+                  <Grid container spacing={3} wrap='wrap'>
                     <Grid item xs={12} md={6}>
                       <WorkExperience
                         company='ACME Inc.'
@@ -143,7 +144,7 @@ const App = () => {
                 <br></br>
                 <ContentHeader name='Projects' />
                 <Container maxWidth='lg'>
-                  <Grid container spacing={2}>
+                  <Grid container spacing={2} xs={{ justifyContent: "center" }}>
                     <Grid item xs={12} md={4}>
                       <ProjectCard />
                     </Grid>
@@ -158,6 +159,7 @@ const App = () => {
                   <br></br>
                   <br></br>
                 </Container>
+                <ImageCollage />
               </div>
             </main>
           </>

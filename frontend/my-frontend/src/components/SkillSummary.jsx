@@ -65,7 +65,7 @@ function SkillSummary() {
             <Typography>Languages</Typography>
           </AccordionSummary>
 
-          <AccordionDetails>
+          <AccordionDetails sx={{ overflowY: "auto", overflowX: "auto" }}>
             <Divider>
               <Chip label='Most Expierence' variant='outlined'></Chip>
             </Divider>

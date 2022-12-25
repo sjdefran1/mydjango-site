@@ -3,6 +3,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Grow from "@mui/material/Grow";
+import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import IconButton from "@mui/material/IconButton";
 import GithubIcon from "@mui/icons-material/GitHub";
@@ -30,7 +31,9 @@ export default function Hello() {
         <br></br>
         <br></br>
         <Grow in={true} timeout={250}>
-          <Paper elevation={7} sx={{ ml: "10%", mr: "10%", borderRadius: 5 }}>
+          <Paper
+            elevation={7}
+            sx={{ ml: "10%", mr: "10%", borderRadius: 5, overflow: "auto" }}>
             <br></br>
             <Typography
               variant='h1'

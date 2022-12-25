@@ -17,6 +17,7 @@ import IntroTabs from "./IntroTabs.jsx";
 import Hello from "./Hello.jsx";
 import School from "./School.jsx";
 import "./Intro.css";
+import ImageCollage from "./ImageCollage.jsx";
 
 export default function Intro() {
   const [value, setValue] = React.useState("one");
@@ -28,7 +29,7 @@ export default function Intro() {
     <>
       <Container maxWidth='xl' sx={{ mt: 3, mb: 4 }}>
         <Grid container spacing={0} sx={{ minHeight: "75%" }}>
-          <Grid item xs={6} ref={gridRef} sx={{ paddingTop: "0px" }}>
+          <Grid item xs={12} md={6} ref={gridRef} sx={{ paddingTop: "0px" }}>
             <Paper
               elevation={24}
               sx={{
@@ -54,7 +55,7 @@ export default function Intro() {
                   />
                   <Tab
                     value='three'
-                    label='More Me'
+                    label='Photos'
                     sx={{ fontFamily: "Roboto Condensed" }}
                   />
                 </Tabs>
@@ -71,7 +72,8 @@ export default function Intro() {
             <Fade in={true} timeout={1000}>
               <Grid
                 item
-                xs={6}
+                xs={12}
+                md={6}
                 sx={{
                   maxWidth: "50%",
                   borderRadius: "0px 15px 15px 15px",
@@ -87,7 +89,8 @@ export default function Intro() {
             <Fade in={true} timeout={1000}>
               <Grid
                 item
-                xs={6}
+                xs={12}
+                md={6}
                 sx={{
                   maxWidth: "25%",
                   borderRadius: "0px 15px 15px 15px",
@@ -99,6 +102,7 @@ export default function Intro() {
             </Fade>
           )}
         </Grid>
+        {value === "three" && <ImageCollage />}
       </Container>
     </>
   );
