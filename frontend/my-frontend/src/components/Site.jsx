@@ -3,35 +3,21 @@ import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
 import Chip from "@mui/material/Chip";
 import CardHeader from "@mui/material/CardHeader";
-import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
-import Collapse from "@mui/material/Collapse";
 import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import Divider from "@mui/material/Divider";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import ShareIcon from "@mui/icons-material/Share";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import CircleIcon from "@mui/icons-material/Circle";
-import mePic from "../static/pics/steps-bw.jpg";
-import pythonSVG from "../static/pics/python-5.svg";
-import javaSvg from "../static/pics/javaSvg.svg";
-import springbootSvg from "../static/pics/springboot.svg";
 import djangoJPG from "../static/pics/django.jpg";
 import chatJPG from "../static/pics/chatGPT.jpg";
-import goSportsLogo from "../static/pics/blue_go_sports.png";
-import cyRateLogo from "../static/pics/CyRate.png";
 import reactSvg from "../static/pics/react.png";
 import sjdSvg from "../static/pics/sjd.png";
 import bootStrapSVG from "../static/pics/bootstrap.svg";
-import teamSelectGIF from "../static/pics/team-select.gif";
-import FeatureList from "./FeatureList.jsx";
-import BulletText from "./bulletText.jsx";
 import Box from "@mui/material/Box";
+import muiLogo from "../static/pics/mui.png";
 //import { projects } from "./portfolio";
 
 const ExpandMore = styled((props) => {
@@ -65,7 +51,7 @@ export default function CoolCard(props) {
             />
           </>
         }
-        title='This Site!'
+        title='sjdefran.com'
         subheader='Full Stack Web App'
       />
       <Divider textAlign='center' variant='fullWidth'>
@@ -80,31 +66,38 @@ export default function CoolCard(props) {
             sx={{
               justifyContent: "center",
             }}>
-            <IconButton aria-label='java'>
+            <IconButton aria-label='react'>
               <a target='_blank' rel='noreferrer' href='https://reactjs.org/'>
-                <Avatar src={reactSvg} aria-label='java' />
+                <Avatar src={reactSvg} aria-label='react logo' />
               </a>
             </IconButton>
-            <IconButton aria-label='springboot'>
+            <IconButton aria-label='mui'>
+              <a href='https://mui.com//' target='_blank' rel='noreferrer'>
+                <Avatar src={muiLogo} aria-label='mui Logo' sx={{}} />
+              </a>
+            </IconButton>
+            <IconButton aria-label='django'>
               <a
                 href='https://www.djangoproject.com/'
                 target='_blank'
                 rel='noreferrer'>
-                <Avatar src={djangoJPG} aria-label='spring' sx={{}} />
+                <Avatar src={djangoJPG} aria-label='django logo' sx={{}} />
               </a>
             </IconButton>
-            <IconButton aria-label='springboot'>
+            <IconButton aria-label='chatGPT'>
               <a
                 href='https://openai.com/blog/chatgpt/'
                 target='_blank'
                 rel='noreferrer'>
-                <Avatar src={chatJPG} aria-label='spring' sx={{}} />
+                <Avatar src={chatJPG} aria-label='chatGPT Logo' sx={{}} />
               </a>
             </IconButton>
           </Stack>
           <Box sx={{ textAlign: "center" }}>
             <Typography variant='subtitle1' sx={{ marginY: 1 }} paragraph>
-              This website was created with React, Django, and OpenAI's ChaptGPT
+              This website was created w/ React on the frontend (Utilizing
+              Material UI). Django on the backend, and some assistance from
+              OpenAI's ChaptGPT
             </Typography>
           </Box>
         </>

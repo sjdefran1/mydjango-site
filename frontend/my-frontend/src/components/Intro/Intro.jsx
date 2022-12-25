@@ -75,7 +75,6 @@ export default function Intro() {
                 xs={12}
                 md={6}
                 sx={{
-                  maxWidth: "50%",
                   borderRadius: "0px 15px 15px 15px",
                   backgroundImage: `url(${mePic})`,
                   backgroundPosition: "center",
@@ -92,7 +91,6 @@ export default function Intro() {
                 xs={12}
                 md={6}
                 sx={{
-                  maxWidth: "25%",
                   borderRadius: "0px 15px 15px 15px",
                   backgroundImage: `url(${dmPic})`,
                   backgroundPosition: "center",

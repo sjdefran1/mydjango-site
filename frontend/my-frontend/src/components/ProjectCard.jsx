@@ -61,7 +61,7 @@ export default function CoolCard(props) {
           </>
         }
         title='GoSports'
-        subheader='Full Stack Django Web App'
+        subheader='Full Stack Web App'
       />
       <Divider textAlign='center' variant='fullWidth'>
         <Chip label='Tech Stack' />
@@ -115,7 +115,8 @@ export default function CoolCard(props) {
           <Box sx={{ textAlign: "center" }}>
             <Typography variant='subtitle1' sx={{ marginY: 1 }} paragraph>
               Web app that provides you everything NBA. Created with a Django
-              backend and a bootstrap frontend, you can view real time live data
+              backend and a bootstrap frontend, view real time scores and
+              statistics from around the league
             </Typography>
           </Box>
         </>

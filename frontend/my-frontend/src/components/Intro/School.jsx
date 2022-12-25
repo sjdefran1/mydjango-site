@@ -26,6 +26,7 @@ export default function SlideFromContainer(props) {
         <Avatar
           src={cyPNG}
           alt='cy'
+          imgProps={{ loading: "lazy" }}
           sx={{
             marginTop: 1,
             ml: "auto",

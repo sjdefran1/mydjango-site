@@ -12,6 +12,7 @@ function ContentHeader({ name }) {
 
           ml: "35%",
           mr: "35%",
+          overflow: "auto",
           fontFamily: "Roboto Condensed",
           borderRadius: 2,
 
