@@ -34,7 +34,7 @@ class Message(Base):
         self.name = name
         self.email = email
         self.message = message
-        
+
 # Message class for incoming requests
 class IncomingMessage(BaseModel):
     name: str = Field(..., example="John Smith")

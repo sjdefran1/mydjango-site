@@ -17,6 +17,7 @@ import CyRate from "./components/CyRate.jsx";
 import Site from "./components/Site.jsx";
 import OtherProjects from "./components/OtherProjects.jsx";
 import ContactMe from "./components/ContactMe.jsx";
+import { Route, Router } from "react-router-dom";
 
 const darkTheme = createTheme({
   palette: {
@@ -107,61 +108,69 @@ const App = () => {
             <main>
               <div>
                 <Intro />
-
-                <ContentHeader name='Work Experience' />
-                <Container maxWidth='xl'>
-                  <Grid container spacing={3} wrap='wrap'>
-                    <Grid item xs={12} md={6}>
-                      <WorkExperience
-                        company='ACME Inc.'
-                        jobTitle='Software Engineer'
-                        description='Worked on various projects including a project to build a new CRM system for the company.'
-                      />
+                <section id='work'>
+                  <ContentHeader name='Work Experience' />
+                  <Container maxWidth='xl'>
+                    <Grid container spacing={3} wrap='wrap'>
+                      <Grid item xs={12} md={6}>
+                        <WorkExperience
+                          company='ACME Inc.'
+                          jobTitle='Software Engineer'
+                          description='Worked on various projects including a project to build a new CRM system for the company.'
+                        />
+                      </Grid>
+                      <Grid item xs={12} md={6}>
+                        <WorkExpierenceS
+                          company='Amazon Logistics'
+                          jobTitle='Learning Ambassador'
+                          description='Managed same day packaage delivery crew'
+                          image={amazonSvg}
+                          iy={100}
+                          ix={100}
+                        />
+                        <br></br>
+                        <WorkExpierenceS
+                          company='Johnston Community School District'
+                          jobTitle='Childcare Provider'
+                          description='Responsible for looking after group of kids.'
+                          image={dragonsSvg}
+                          iy={100}
+                          ix={100}
+                        />
+                        <SkillSummary />
+                      </Grid>
                     </Grid>
-                    <Grid item xs={12} md={6}>
-                      <WorkExpierenceS
-                        company='Amazon Logistics'
-                        jobTitle='Learning Ambassador'
-                        description='Managed same day packaage delivery crew'
-                        image={amazonSvg}
-                        iy={100}
-                        ix={100}
-                      />
-                      <br></br>
-                      <WorkExpierenceS
-                        company='Johnston Community School District'
-                        jobTitle='Childcare Provider'
-                        description='Responsible for looking after group of kids.'
-                        image={dragonsSvg}
-                        iy={100}
-                        ix={100}
-                      />
-                      <SkillSummary />
-                    </Grid>
-                  </Grid>
-                </Container>
+                  </Container>
+                </section>
                 <br></br>
-                <ContentHeader name='Projects' />
-                <Container maxWidth='lg'>
-                  <Grid container spacing={2} xs={{ justifyContent: "center" }}>
-                    <Grid item xs={12} md={4}>
-                      <ProjectCard />
+                <section id='projects'>
+                  <ContentHeader name='Projects' />
+                  <Container maxWidth='lg' xs={{ justifyContent: "center" }}>
+                    <Grid
+                      container
+                      spacing={2}
+                      xs={{ justifyContent: "center" }}>
+                      <Grid item xs={12} md={4}>
+                        <ProjectCard />
+                      </Grid>
+                      <Grid item xs={12} md={4}>
+                        <CyRate />
+                      </Grid>
+                      <Grid item xs={12} md={4}>
+                        <Site />
+                      </Grid>
                     </Grid>
-                    <Grid item xs={12} md={4}>
-                      <CyRate />
-                    </Grid>
-                    <Grid item xs={12} md={4}>
-                      <Site />
-                    </Grid>
-                  </Grid>
-                  <OtherProjects />
-                  <br></br>
-                  <br></br>
-                </Container>
-                <ContentHeader name='Contact Me!' />
-                <Container maxWidth='md'>
-                  <ContactMe />
-                </Container>
+                    <OtherProjects />
+                    <br></br>
+                    <br></br>
+                  </Container>
+                </section>
+                <section id='contact'>
+                  <ContentHeader name='Contact Me!' />
+                  <Container maxWidth='md'>
+                    <ContactMe />
+                  </Container>
+                </section>
               </div>
             </main>
           </>

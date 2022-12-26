@@ -1,4 +1,5 @@
 import * as React from "react";
+import { NavHashLink } from "react-router-hash-link";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
@@ -11,21 +12,36 @@ export default function TitleBar() {
       <AppBar position='fixed' sx={{ opacity: "70%" }}>
         <Toolbar sx={{ justifyContent: "center" }}>
           <Typography variant='h6'>SJD</Typography>
-          <Button
-            variant='text'
-            sx={{ ml: 2, borderBottom: 2, borderColor: "secondary" }}>
-            Intro
-          </Button>
-          <Button
-            variant='text'
-            sx={{ ml: 2, borderBottom: 2, borderColor: "secondary" }}>
-            Projects
-          </Button>
-          <Button
-            variant='text'
-            sx={{ ml: 2, borderBottom: 2, borderColor: "secondary" }}>
-            Work Experience
-          </Button>
+          <NavHashLink smooth to='#intro'>
+            <Button
+              variant='text'
+              sx={{ ml: 2, borderBottom: 2, borderColor: "secondary" }}>
+              Intro
+            </Button>
+          </NavHashLink>
+
+          <NavHashLink smooth to='#work'>
+            <Button
+              variant='text'
+              sx={{ ml: 2, borderBottom: 2, borderColor: "secondary" }}>
+              Work Experience
+            </Button>
+          </NavHashLink>
+
+          <NavHashLink smooth to='#projects'>
+            <Button
+              variant='text'
+              sx={{ ml: 2, borderBottom: 2, borderColor: "secondary" }}>
+              Projects
+            </Button>
+          </NavHashLink>
+          <NavHashLink smooth to='#contact'>
+            <Button
+              variant='text'
+              sx={{ ml: 2, borderBottom: 2, borderColor: "secondary" }}>
+              Contact Me!
+            </Button>
+          </NavHashLink>
         </Toolbar>
       </AppBar>
       <Toolbar />
