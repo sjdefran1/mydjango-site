@@ -10,7 +10,6 @@ import Switch from "@mui/material/Switch";
 import Avatar from "@mui/material/Avatar";
 import cyPNG from "../../static/pics/isuCy.png";
 import Typography from "@mui/material/Typography";
-
 export default function SlideFromContainer(props) {
   const [checked, setChecked] = React.useState(false);
   const containerRef = React.useRef(props.gridRef);
@@ -39,7 +38,7 @@ export default function SlideFromContainer(props) {
           }}></Avatar>
       </Grow>
 
-      <Grow direction='left' in={true} container={containerRef.current}>
+      <Grow in={true} container={containerRef.current}>
         <Paper
           elevation={7}
           sx={{
@@ -103,27 +102,31 @@ export default function SlideFromContainer(props) {
               direction='row'
               spacing={2}
               sx={{ justifyContent: "center", mt: 1 }}>
-              <Chip label='COMS227: OOP'></Chip>
-              <Chip label='COMS228: Datastructers & Algorithms'></Chip>
+              <Chip label='COMS227: OOP' color='primary'></Chip>
+              <Chip
+                label='COMS228: Datastructers & Algorithms'
+                color='primary'></Chip>
             </Stack>
           </Grow>
-          <Grow in={true} timeout={1000} container={containerRef.current}>
+          <Grow in={true} timeout={1300} container={containerRef.current}>
             <Stack
               direction='row'
               spacing={2}
               sx={{ justifyContent: "center", mt: 1 }}>
-              <Chip label='COMS309: Android Development'></Chip>
-              <Chip label='CPRE288: Embedded Programming'></Chip>
-              <Chip label='COMS363: DBMS'></Chip>
+              <Chip label='COMS309: Android Development' color='info'></Chip>
+              <Chip label='CPRE288: Embedded Programming' color='info'></Chip>
+              <Chip label='COMS363: DBMS' color='info'></Chip>
             </Stack>
           </Grow>
-          <Grow in={true} timeout={1000} container={containerRef.current}>
+          <Grow in={true} timeout={1600} container={containerRef.current}>
             <Stack
               direction='row'
               spacing={2}
               sx={{ justifyContent: "center", mt: 1, mb: 2 }}>
-              <Chip label='COMS319: Web Development'></Chip>
-              <Chip label='CPRE288: Embedded Programming'></Chip>
+              <Chip label='COMS319: Web Development' color='secondary'></Chip>
+              <Chip
+                label='CPRE288: Embedded Programming'
+                color='secondary'></Chip>
             </Stack>
           </Grow>
         </Paper>

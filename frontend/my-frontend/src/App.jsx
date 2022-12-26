@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import Grid from "@mui/material/Grid";
+import Chip from "@mui/material/Chip";
 import Container from "@mui/material/Container";
 import CssBaseline from "@mui/material/CssBaseline";
 import ProjectCard from "./components/ProjectCard.jsx";
@@ -26,6 +27,13 @@ const darkTheme = createTheme({
       main: "#5c6bc0",
       light: "#9fa8da",
       dark: "#3949ab",
+    },
+    isu: {
+      blue: "#183260",
+      contrastText: "#fff",
+
+      red: "#bf4d40",
+      yellow: "#f4dd57",
     },
   },
 
@@ -66,6 +74,12 @@ const darkTheme = createTheme({
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleClick = () => {
+    setIsVisible(!isVisible);
+  };
 
   useEffect(() => {
     const imgs = [
@@ -159,8 +173,29 @@ const App = () => {
                       <Grid item xs={12} md={4}>
                         <Site />
                       </Grid>
+                      {isVisible ? (
+                        <>
+                          <Container maxWidth='sm'>
+                            <Chip
+                              variant='filled'
+                              color='secondary'
+                              label='Hide More Projects'
+                              onClick={handleClick}
+                              sx={{ ml: "40%", mr: "43%", mt: 2 }}></Chip>
+                          </Container>
+                        </>
+                      ) : (
+                        <Container maxWidth='sm'>
+                          <Chip
+                            variant='filled'
+                            color='secondary'
+                            label='Show More Projects'
+                            onClick={handleClick}
+                            sx={{ ml: "40%", mr: "43%", mt: 2 }}></Chip>
+                        </Container>
+                      )}
                     </Grid>
-                    <OtherProjects />
+                    {isVisible && <OtherProjects />}
                     <br></br>
                     <br></br>
                   </Container>

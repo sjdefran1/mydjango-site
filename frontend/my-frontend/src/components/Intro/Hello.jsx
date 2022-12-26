@@ -33,7 +33,7 @@ export default function Hello() {
         <Grow in={true} timeout={250}>
           <Paper
             elevation={7}
-            sx={{ ml: "10%", mr: "10%", borderRadius: 5, overflow: "auto" }}>
+            sx={{ ml: "10%", mr: "10%", borderRadius: 5, overflow: "visible" }}>
             <br></br>
             <Typography
               variant='h1'
