@@ -18,6 +18,7 @@ import sk8 from "../../static/collage/sk8.PNG";
 import curvy from "../../static/collage/curvy.jpg";
 import trees from "../../static/collage/trees.jpg";
 import studentSection from "../../static/collage/studentSection.jpg";
+import samKyle from "../../static/pics/samISU2.jpg";
 
 export default function MasonryImageList() {
   return (
@@ -82,6 +83,10 @@ const itemData = [
   },
   {
     img: drawing1,
+    title: "Doors",
+  },
+  {
+    img: samKyle,
     title: "Doors",
   },
   {

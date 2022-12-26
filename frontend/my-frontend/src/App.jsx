@@ -16,6 +16,7 @@ import SkillSummary from "./components/SkillSummary.jsx";
 import CyRate from "./components/CyRate.jsx";
 import Site from "./components/Site.jsx";
 import OtherProjects from "./components/OtherProjects.jsx";
+import ContactMe from "./components/ContactMe.jsx";
 
 const darkTheme = createTheme({
   palette: {
@@ -156,6 +157,10 @@ const App = () => {
                   <OtherProjects />
                   <br></br>
                   <br></br>
+                </Container>
+                <ContentHeader name='Contact Me!' />
+                <Container maxWidth='md'>
+                  <ContactMe />
                 </Container>
               </div>
             </main>
