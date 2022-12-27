@@ -14,7 +14,10 @@ import Link from "@mui/material/Link";
 import Divider from "@mui/material/Divider";
 import PhoneIcon from "@mui/icons-material/Phone";
 import ArticleIcon from "@mui/icons-material/Article";
+import mePic from "../../static/pics/wide-green.jpg";
+
 import defResume from "../../static/DeFrancisco_ResumeF22.pdf";
+import { makeStyles, useTheme, Hidden, Avatar } from "@mui/material";
 
 export default function Hello() {
   return (
@@ -28,23 +31,50 @@ export default function Hello() {
           borderColor: "secondary.main",
           borderBottom: 1,
         }}>
-        <br></br>
-        <br></br>
+        <Hidden mdDown>
+          <br></br>
+          <br></br>
+        </Hidden>
+        <Hidden mdUp>
+          <br></br>
+          <Avatar
+            src={mePic}
+            imgProps={{ backgroundPosition: "center" }}
+            sx={{ height: "250px", width: "250px", ml: "auto", mr: "auto" }}
+          />
+          <br></br>
+        </Hidden>
         <Grow in={true} timeout={250}>
           <Paper
             elevation={7}
-            sx={{ ml: "10%", mr: "10%", borderRadius: 5, overflow: "visible" }}>
+            sx={{ ml: "10%", mr: "10%", borderRadius: 5, overflow: "scroll" }}>
             <br></br>
             <Typography
               variant='h1'
               component='p'
-              sx={{ fontFamily: "Roboto Condensed" }}>
+              sx={{
+                fontFamily: "Roboto Condensed",
+                fontSize: {
+                  lg: 90,
+                  md: 80,
+                  sm: 60,
+                  xs: 50,
+                },
+              }}>
               Sam DeFrancisco
             </Typography>
             <Typography
               variant='h4'
               color='secondary.light'
-              sx={{ fontFamily: "Roboto Condensed" }}>
+              sx={{
+                fontFamily: "Roboto Condensed",
+                fontSize: {
+                  lg: 45,
+                  md: 45,
+                  sm: 35,
+                  xs: 35,
+                },
+              }}>
               Software Engineer
             </Typography>
             <br></br>

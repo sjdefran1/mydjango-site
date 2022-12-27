@@ -151,7 +151,7 @@ function SkillSummary() {
             id='panel2a-header'>
             <Typography>Developer Tools</Typography>
           </AccordionSummary>
-          <AccordionDetails>
+          <AccordionDetails sx={{ overflowY: "auto", overflowX: "auto" }}>
             <Divider inset sx={{ ml: "30%", mr: "30%" }}>
               <Chip
                 label='Dev Tools'
@@ -204,7 +204,7 @@ function SkillSummary() {
             id='panel2a-header'>
             <Typography>Other Skills/Hobies</Typography>
           </AccordionSummary>
-          <AccordionDetails>
+          <AccordionDetails sx={{ overflowY: "auto", overflowX: "auto" }}>
             <Typography>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Suspendisse malesuada lacus ex, sit amet blandit leo lobortis

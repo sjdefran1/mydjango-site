@@ -18,6 +18,7 @@ import Hello from "./Hello.jsx";
 import School from "./School.jsx";
 import "./Intro.css";
 import ImageCollage from "./ImageCollage.jsx";
+import Hidden from "@mui/material/Hidden";
 
 export default function Intro() {
   const [value, setValue] = React.useState("one");
@@ -70,19 +71,21 @@ export default function Intro() {
               )}
             </Grid>
             {value === "one" && (
-              <Fade in={true} timeout={1000}>
-                <Grid
-                  item
-                  xs={12}
-                  md={6}
-                  sx={{
-                    borderRadius: "0px 15px 15px 15px",
-                    backgroundImage: `url(${mePic})`,
-                    backgroundPosition: "center",
-                    minHeight: 800,
-                    maxHeight: "100%",
-                  }}></Grid>
-              </Fade>
+              <Hidden mdDown>
+                <Fade in={true} timeout={1000}>
+                  <Grid
+                    item
+                    xs={12}
+                    md={6}
+                    sx={{
+                      borderRadius: "0px 15px 15px 15px",
+                      backgroundImage: `url(${mePic})`,
+                      backgroundPosition: "center",
+                      minHeight: { lg: 800, md: 800, sm: 500, xs: 500 },
+                      maxHeight: "100%",
+                    }}></Grid>
+                </Fade>
+              </Hidden>
             )}
 
             {value === "two" && (
