@@ -11,6 +11,7 @@ import {
   AccordionDetails,
   AccordionSummary,
   Grow,
+  Hidden,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
@@ -68,17 +69,47 @@ function SkillSummary() {
               <Chip label='Most Expierence' variant='outlined'></Chip>
             </Divider>
             <br></br>
-            <Grow in={expanded} container={containerRef.current} timeout={750}>
-              <Stack
-                spacing={1}
-                direction='row'
-                sx={{ justifyContent: "center", mx: "auto", my: 1 }}>
-                <Chip label='Python' color='info' />
-                <Chip label='Java' color='error' />
-                <Chip label='SQL' color='primary' />
-                <Chip label='HTML & CSS' color='secondary' />
-              </Stack>
-            </Grow>
+            <Hidden smDown>
+              <>
+                <Grow
+                  in={expanded}
+                  container={containerRef.current}
+                  timeout={750}>
+                  <Stack
+                    spacing={1}
+                    direction='row'
+                    sx={{ justifyContent: "center", mx: "auto", my: 1 }}>
+                    <Chip label='Python' color='info' />
+                    <Chip label='Java' color='error' />
+                    <Chip label='SQL' color='primary' />
+                    <Chip label='HTML & CSS' color='secondary' />
+                  </Stack>
+                </Grow>
+              </>
+            </Hidden>
+
+            <Hidden smUp>
+              <>
+                <Grow in={expanded} timeout={750}>
+                  <Stack
+                    spacing={1}
+                    direction='row'
+                    sx={{ justifyContent: "center", mx: "auto", my: 1 }}>
+                    <Chip label='Python' color='info' />
+                    <Chip label='Java' color='error' />
+                    <Chip label='SQL' color='primary' />
+                  </Stack>
+                </Grow>
+                <Grow in={expanded} timeout={750}>
+                  <Stack
+                    spacing={1}
+                    direction='row'
+                    sx={{ justifyContent: "center", mx: "auto", my: 1 }}>
+                    <Chip label='HTML & CSS' color='secondary' />
+                  </Stack>
+                </Grow>
+              </>
+            </Hidden>
             <br></br>
             <Divider inset sx={{ ml: "30%", mr: "30%" }}>
               <Chip
@@ -89,17 +120,52 @@ function SkillSummary() {
               />
             </Divider>
             <br></br>
-            <Grow in={expanded} container={containerRef.current} timeout={950}>
-              <Stack
-                spacing={1}
-                direction='row'
-                sx={{ justifyContent: "center", mx: "auto", my: 1 }}>
-                <Chip label='SpringBoot' />
-                <Chip label='Hiberante/JDBC' />
-                <Chip label='Django' />
-                <Chip label='SQLAlchemy' />
-              </Stack>
-            </Grow>
+
+            <Hidden smDown>
+              <Grow
+                in={expanded}
+                container={containerRef.current}
+                timeout={950}>
+                <Stack
+                  spacing={1}
+                  direction='row'
+                  sx={{ justifyContent: "center", mx: "auto", my: 1 }}>
+                  <Chip label='SpringBoot' />
+                  <Chip label='Hiberante/JDBC' />
+                  <Chip label='Django' />
+                  <Chip label='SQLAlchemy' />
+                </Stack>
+              </Grow>
+            </Hidden>
+
+            <Hidden smUp>
+              <Grow
+                in={expanded}
+                container={containerRef.current}
+                timeout={950}>
+                <Stack
+                  spacing={1}
+                  direction='row'
+                  sx={{ justifyContent: "center", mx: "auto", my: 1 }}>
+                  <Chip label='SpringBoot' />
+                  <Chip label='Hiberante/JDBC' />
+                  <Chip label='Django' />
+                </Stack>
+              </Grow>
+
+              <Grow
+                in={expanded}
+                container={containerRef.current}
+                timeout={950}>
+                <Stack
+                  spacing={1}
+                  direction='row'
+                  sx={{ justifyContent: "center", mx: "auto", my: 1 }}>
+                  <Chip label='SQLAlchemy' />
+                </Stack>
+              </Grow>
+            </Hidden>
+
             <br></br>
             <Divider>
               <Chip label='Less Expierence' variant='outlined'></Chip>
@@ -159,19 +225,55 @@ function SkillSummary() {
               />
             </Divider>
             <br></br>
-            <Grow in={expanded2} container={containerRef.current} timeout={750}>
-              <Stack
-                spacing={1}
-                direction='row'
-                sx={{ justifyContent: "center", mx: "auto", my: 1 }}>
-                <Chip label='Git' color='secondary' />
-                <Chip label='CI/CD' color='info' />
-                <Chip label='Postman' color='error' />
-                <Chip label='MySQLWorkbench' color='secondary' />
-                <Chip label='Linux' color='info' />
-                <Chip label='LaTeX' color='success' />
-              </Stack>
-            </Grow>
+            <Hidden smDown>
+              <Grow
+                in={expanded2}
+                container={containerRef.current}
+                timeout={750}>
+                <Stack
+                  spacing={1}
+                  direction='row'
+                  sx={{ justifyContent: "center", mx: "auto", my: 1 }}>
+                  <Chip label='Git' color='secondary' />
+                  <Chip label='CI/CD' color='info' />
+                  <Chip label='Postman' color='error' />
+                  <Chip label='MySQLWorkbench' color='secondary' />
+                  <Chip label='Linux' color='info' />
+                  <Chip label='LaTeX' color='success' />
+                </Stack>
+              </Grow>
+            </Hidden>
+
+            <Hidden smUp>
+              <Grow
+                in={expanded2}
+                container={containerRef.current}
+                timeout={750}>
+                <Stack
+                  spacing={1}
+                  direction='row'
+                  sx={{ justifyContent: "center", mx: "auto", my: 1 }}>
+                  <Chip label='Git' color='secondary' />
+                  <Chip label='CI/CD' color='info' />
+                  <Chip label='Postman' color='error' />
+                </Stack>
+              </Grow>
+
+              <Grow
+                in={expanded2}
+                container={containerRef.current}
+                timeout={750}>
+                <Stack
+                  spacing={1}
+                  direction='row'
+                  sx={{ justifyContent: "center", mx: "auto", my: 1 }}>
+                  <Chip label='MySQLWorkbench' color='secondary' />
+                  <Chip label='Linux' color='info' />
+                  <Chip label='LaTeX' color='success' />
+                </Stack>
+              </Grow>
+            </Hidden>
+
             <br></br>
             <Divider inset sx={{ ml: "30%", mr: "30%" }}>
               <Chip

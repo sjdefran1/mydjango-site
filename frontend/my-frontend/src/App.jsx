@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import Grid from "@mui/material/Grid";
+import Hidden from "@mui/material/Hidden";
 import Chip from "@mui/material/Chip";
 import Container from "@mui/material/Container";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -172,27 +173,53 @@ const App = () => {
                       <Grid item xs={12} md={4}>
                         <Site />
                       </Grid>
-                      {isVisible ? (
-                        <>
+                      <Hidden smDown>
+                        {isVisible ? (
+                          <>
+                            <Container maxWidth='sm'>
+                              <Chip
+                                variant='filled'
+                                color='secondary'
+                                label='Hide More Projects'
+                                onClick={handleClick}
+                                sx={{ ml: "40%", mr: "43%", mt: 2 }}></Chip>
+                            </Container>
+                          </>
+                        ) : (
                           <Container maxWidth='sm'>
                             <Chip
                               variant='filled'
                               color='secondary'
-                              label='Hide More Projects'
+                              label='Show More Projects'
                               onClick={handleClick}
                               sx={{ ml: "40%", mr: "43%", mt: 2 }}></Chip>
                           </Container>
-                        </>
-                      ) : (
-                        <Container maxWidth='sm'>
-                          <Chip
-                            variant='filled'
-                            color='secondary'
-                            label='Show More Projects'
-                            onClick={handleClick}
-                            sx={{ ml: "40%", mr: "43%", mt: 2 }}></Chip>
-                        </Container>
-                      )}
+                        )}
+                      </Hidden>
+
+                      <Hidden smUp>
+                        {isVisible ? (
+                          <>
+                            <Container maxWidth='sm'>
+                              <Chip
+                                variant='filled'
+                                color='secondary'
+                                label='Hide More Projects'
+                                onClick={handleClick}
+                                sx={{ ml: "32%", mr: "68%", mt: 2 }}></Chip>
+                            </Container>
+                          </>
+                        ) : (
+                          <Container maxWidth='sm'>
+                            <Chip
+                              variant='filled'
+                              color='secondary'
+                              label='Show More Projects'
+                              onClick={handleClick}
+                              sx={{ ml: "32%", mr: "68%", mt: 2 }}></Chip>
+                          </Container>
+                        )}
+                      </Hidden>
                     </Grid>
                     {isVisible && <OtherProjects />}
                     <br></br>

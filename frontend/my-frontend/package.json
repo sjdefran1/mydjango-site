@@ -1,7 +1,7 @@
 {
   "name": "my-frontend",
   "version": "0.1.0",
-  "homepage": "https://sjdefran1.github.io/mydjango-site",
+  "homepage": "https://sjdefran1.github.io/mysite",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.4",
