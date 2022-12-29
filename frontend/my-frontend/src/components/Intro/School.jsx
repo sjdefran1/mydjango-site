@@ -6,6 +6,8 @@ import Stack from "@mui/material/Stack";
 import Avatar from "@mui/material/Avatar";
 import cyPNG from "../../static/pics/isuCy.png";
 import Typography from "@mui/material/Typography";
+import Hidden from "@mui/material/Hidden";
+
 export default function SlideFromContainer(props) {
   const containerRef = React.useRef(props.gridRef);
 
@@ -70,7 +72,7 @@ export default function SlideFromContainer(props) {
           elevation={7}
           sx={{
             ml: "5%",
-            mr: "5%",
+            mr: "0%",
             maxHeight: "25%",
             maxWidth: "100%",
             borderRadius: 2,
@@ -88,6 +90,7 @@ export default function SlideFromContainer(props) {
             }}>
             Some Relevant Course Work
           </Typography>
+          <Hidden sm></Hidden>
           <Grow in={true} timeout={1000} container={containerRef.current}>
             <Stack
               direction='row'

@@ -77,6 +77,18 @@ const App = () => {
 
   const [isVisible, setIsVisible] = useState(false);
 
+  const desc1 = // eslint-disable-next-line
+    "The responsibilities of Learning Ambassadors include training and onboarding new employees. \
+    Explaining rules and policies for working at the site, \
+    & answering questions and providing guidance to new associates. \
+    I assisted and managed same day delivery crew with direct roles in the process, \
+    such as picking and packing. On days where I wasn't needed for onboarding I continued to perform a variety of duties. \
+    These responsibilities included transporting and staging deliveries, receiving trucks full of orders and preparing them for delivery,\
+    working in different temperatures, building, wrapping, sorting, and transporting\
+    pallets and packages. Used technology to sort, scan, and prepare orders.\
+    In addition, I worked closely with delivery drivers to ensure low package \
+    loss and correct routing of orders.";
+
   const handleClick = () => {
     setIsVisible(!isVisible);
   };
@@ -137,7 +149,7 @@ const App = () => {
                         <WorkExpierenceS
                           company='Amazon Logistics'
                           jobTitle='Learning Ambassador'
-                          description='Managed same day packaage delivery crew'
+                          description={desc1}
                           image={amazonSvg}
                           iy={100}
                           ix={100}

@@ -14,7 +14,7 @@ import {
   Hidden,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-//hello test
+
 function SkillSummary() {
   const containerRef = useRef(null);
   const [expanded, setExpanded] = React.useState(false);
