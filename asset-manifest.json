@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mydjango-site/static/css/main.b625cc83.css",
-    "main.js": "/mydjango-site/static/js/main.52211d89.js",
+    "main.js": "/mydjango-site/static/js/main.5b10eff4.js",
     "static/media/campanileMe.JPG": "/mydjango-site/static/media/campanileMe.b9623af496d24c4de00b.JPG",
     "static/media/kitts.JPG": "/mydjango-site/static/media/kitts.ad74a2043ce986a71363.JPG",
     "static/media/trees.jpg": "/mydjango-site/static/media/trees.28d8538b7e5e5fb19021.jpg",
@@ -15,11 +15,9 @@
     "static/media/sk8.PNG": "/mydjango-site/static/media/sk8.ff95eb77776a189c3fae.PNG",
     "static/media/daboys.JPG": "/mydjango-site/static/media/daboys.b2e83362ac615b1dc6ca.JPG",
     "static/media/mj.JPG": "/mydjango-site/static/media/mj.ffdbe62e0458125633b9.JPG",
-    "static/media/steps-bw.jpg": "/mydjango-site/static/media/steps-bw.1ca41016225996583f5b.jpg",
     "static/media/wide-green.jpg": "/mydjango-site/static/media/wide-green.5f3394f9081a0ed9af57.jpg",
     "static/media/dm.jpg": "/mydjango-site/static/media/dm.b85e147b5761f46b8807.jpg",
     "static/media/partySt.JPG": "/mydjango-site/static/media/partySt.a08d81118c8f925e2c34.JPG",
-    "static/media/team-select.gif": "/mydjango-site/static/media/team-select.e498763bda7922fda9f6.gif",
     "static/media/isuCy.png": "/mydjango-site/static/media/isuCy.5fe567b16a73daf67228.png",
     "static/media/dewtour.JPG": "/mydjango-site/static/media/dewtour.303486bdc2f13bbdcae3.JPG",
     "static/media/drawing1.JPG": "/mydjango-site/static/media/drawing1.9896db3248cec567e403.JPG",
@@ -44,10 +42,10 @@
     "index.html": "/mydjango-site/index.html",
     "static/media/html5-2.svg": "/mydjango-site/static/media/html5-2.af5f5e5665f5b43e06aad415f23ce4d0.svg",
     "main.b625cc83.css.map": "/mydjango-site/static/css/main.b625cc83.css.map",
-    "main.52211d89.js.map": "/mydjango-site/static/js/main.52211d89.js.map"
+    "main.5b10eff4.js.map": "/mydjango-site/static/js/main.5b10eff4.js.map"
   },
   "entrypoints": [
     "static/css/main.b625cc83.css",
-    "static/js/main.52211d89.js"
+    "static/js/main.5b10eff4.js"
   ]
 }
