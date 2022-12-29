@@ -63,7 +63,7 @@ class ContactMe extends React.Component {
                 </IconButton>
               }
               sx={{ mb: 2, textAlign: "center" }}>
-              Message Recieved! I'll get back to you ASAP.
+              Message Sent! I'll get back to you ASAP.
             </Alert>
           </Collapse>
         )}

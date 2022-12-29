@@ -181,7 +181,7 @@ const App = () => {
                               color='secondary'
                               label='Hide More Projects'
                               onClick={handleClick}
-                              sx={{ ml: "45%", mr: "45%", mt: 2 }}></Chip>
+                              sx={{ ml: "40%", mr: "43%", mt: 2 }}></Chip>
                           </Container>
                         </>
                       ) : (
