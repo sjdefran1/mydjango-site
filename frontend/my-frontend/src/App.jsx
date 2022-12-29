@@ -18,7 +18,6 @@ import CyRate from "./components/CyRate.jsx";
 import Site from "./components/Site.jsx";
 import OtherProjects from "./components/OtherProjects.jsx";
 import ContactMe from "./components/ContactMe.jsx";
-import { Route, Router } from "react-router-dom";
 
 const darkTheme = createTheme({
   palette: {

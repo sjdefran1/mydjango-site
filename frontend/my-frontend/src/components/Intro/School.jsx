@@ -1,22 +1,13 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Chip from "@mui/material/Chip";
-import Grid from "@mui/material/Grid";
-import Slide from "@mui/material/Slide";
 import Grow from "@mui/material/Grow";
 import Stack from "@mui/material/Stack";
-import Switch from "@mui/material/Switch";
 import Avatar from "@mui/material/Avatar";
 import cyPNG from "../../static/pics/isuCy.png";
 import Typography from "@mui/material/Typography";
 export default function SlideFromContainer(props) {
-  const [checked, setChecked] = React.useState(false);
   const containerRef = React.useRef(props.gridRef);
-
-  const handleChange = () => {
-    setChecked((prev) => !prev);
-  };
 
   return (
     <>

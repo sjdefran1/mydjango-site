@@ -6,7 +6,6 @@ import {
   Menu,
   MenuItem,
   Typography,
-  Collapse,
   Button,
 } from "@mui/material";
 import { NavHashLink } from "react-router-hash-link";
@@ -58,10 +57,36 @@ function MyNavBar() {
               </Button>
             </NavHashLink>
           </MenuItem>
-          <MenuItem onClick={handleClose}>Menu item 2</MenuItem>
-          <MenuItem onClick={handleClose}>Menu item 3</MenuItem>
+          <MenuItem onClick={handleClose}>
+            <NavHashLink smooth to='#work'>
+              <Button
+                variant='text'
+                sx={{ ml: 2, borderBottom: 2, borderColor: "secondary" }}>
+                Work Experience
+              </Button>
+            </NavHashLink>
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <NavHashLink smooth to='#projects'>
+              <Button
+                variant='text'
+                sx={{ ml: 2, borderBottom: 2, borderColor: "secondary" }}>
+                Projects
+              </Button>
+            </NavHashLink>
+          </MenuItem>
+
+          <MenuItem onClick={handleClose}>
+            <NavHashLink smooth to='#contact'>
+              <Button
+                variant='text'
+                sx={{ ml: 2, borderBottom: 2, borderColor: "secondary" }}>
+                Contact Me!
+              </Button>
+            </NavHashLink>
+          </MenuItem>
         </Menu>
-        <Typography variant='h6'>My Site</Typography>
+        <Typography variant='h6'>SJD</Typography>
       </Toolbar>
     </AppBar>
   );

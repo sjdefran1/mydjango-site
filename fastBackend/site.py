@@ -7,6 +7,8 @@ from sqlalchemy.orm import sessionmaker, Session
 from sqlalchemy.ext.declarative import declarative_base
 from datetime import datetime
 
+# blue: #183260, red: #bf4d40,  yellow: #f4dd57
+
 # Database connection
 db_u = 'sjdefran'
 db_p = 'mysite!2345'

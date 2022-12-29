@@ -2,21 +2,15 @@ import React from "react";
 import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
 import Avatar from "@mui/material/Avatar";
-import CardMedia from "@mui/material/CardMedia";
 import Divider from "@mui/material/Divider";
 import { IconButton } from "@mui/material";
-import Chip from "@mui/material/Chip";
 import Box from "@mui/material/Box";
-import Stack from "@mui/material/Stack";
 import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
 import Collapse from "@mui/material/Collapse";
 import Typography from "@mui/material/Typography";
 import CardActions from "@mui/material/CardActions";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import kinglandSvg from "../static/pics/kingland.svg";
-import javaSvg from "../static/pics/javaSvg.svg";
-import springSvg from "../static/pics/springboot.svg";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;

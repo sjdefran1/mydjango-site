@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Chip,
   Container,
@@ -21,12 +21,6 @@ import BulletText from "./bulletText.jsx";
 import javaSvg from "../static/pics/javaSvg.svg";
 
 function OtherProjects() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  const handleClick = () => {
-    setIsVisible(!isVisible);
-  };
-
   return (
     <>
       <br></br>

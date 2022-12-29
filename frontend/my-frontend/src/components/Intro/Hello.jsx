@@ -1,11 +1,8 @@
 import * as React from "react";
 import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Grow from "@mui/material/Grow";
-import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
-import IconButton from "@mui/material/IconButton";
 import GithubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
@@ -13,11 +10,10 @@ import Stack from "@mui/material/Stack";
 import Link from "@mui/material/Link";
 import Divider from "@mui/material/Divider";
 import PhoneIcon from "@mui/icons-material/Phone";
-import ArticleIcon from "@mui/icons-material/Article";
 import mePic from "../../static/pics/wide-green.jpg";
 
 import defResume from "../../static/DeFrancisco_ResumeF22.pdf";
-import { makeStyles, useTheme, Hidden, Avatar } from "@mui/material";
+import { Hidden, Avatar } from "@mui/material";
 
 export default function Hello() {
   return (

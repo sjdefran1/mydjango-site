@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "@mui/material/Card";
 import Avatar from "@mui/material/Avatar";
-import CardMedia from "@mui/material/CardMedia";
 import Divider from "@mui/material/Divider";
 import { IconButton } from "@mui/material";
 import Chip from "@mui/material/Chip";

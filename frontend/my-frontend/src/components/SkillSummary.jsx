@@ -4,8 +4,6 @@ import { useRef } from "react";
 import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
 import Chip from "@mui/material/Chip";
-import IconButton from "@mui/material/IconButton";
-import Avatar from "@mui/material/Avatar";
 import {
   Divider,
   Stack,
