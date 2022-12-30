@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b625cc83.css",
-    "main.js": "/static/js/main.85ef9d0e.js",
+    "main.js": "/static/js/main.332848af.js",
     "static/media/campanileMe.JPG": "/static/media/campanileMe.b9623af496d24c4de00b.JPG",
     "static/media/kitts.JPG": "/static/media/kitts.ad74a2043ce986a71363.JPG",
     "static/media/trees.jpg": "/static/media/trees.28d8538b7e5e5fb19021.jpg",
@@ -23,6 +23,7 @@
     "static/media/drawing1.JPG": "/static/media/drawing1.9896db3248cec567e403.JPG",
     "static/media/blue_go_sports.png": "/static/media/blue_go_sports.8214e0f9edae35682604.png",
     "static/media/react.png": "/static/media/react.6bcffb56bd0efaa47767.png",
+    "static/media/angular.png": "/static/media/angular.b6d2a9dec3e43e0ffb95.png",
     "static/media/sjd.png": "/static/media/sjd.bb9c902aa040f98c4780.png",
     "static/media/unity.png": "/static/media/unity.7b9d9207c6de001ec561.png",
     "static/media/cyrate2-1.png": "/static/media/cyrate2-1.4a4e4bbe22efe3657bc9.png",
@@ -43,10 +44,10 @@
     "static/media/html5-2.svg": "/static/media/html5-2.af5f5e5665f5b43e06aad415f23ce4d0.svg",
     "static/media/fastapi.svg": "/static/media/fastapi.6c84dc4ea9626837be0ce2c5523b6d52.svg",
     "main.b625cc83.css.map": "/static/css/main.b625cc83.css.map",
-    "main.85ef9d0e.js.map": "/static/js/main.85ef9d0e.js.map"
+    "main.332848af.js.map": "/static/js/main.332848af.js.map"
   },
   "entrypoints": [
     "static/css/main.b625cc83.css",
-    "static/js/main.85ef9d0e.js"
+    "static/js/main.332848af.js"
   ]
 }
