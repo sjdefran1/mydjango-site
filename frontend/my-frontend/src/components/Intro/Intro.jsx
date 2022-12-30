@@ -83,19 +83,21 @@ export default function Intro() {
             )}
 
             {value === "two" && (
-              <Fade in={true} timeout={1000}>
-                <Grid
-                  item
-                  xs={12}
-                  md={6}
-                  sx={{
-                    borderRadius: "0px 15px 15px 15px",
-                    backgroundImage: `url(${dmPic})`,
-                    backgroundPosition: "center",
-                    minHeight: 800,
-                    maxHeight: "100%",
-                  }}></Grid>
-              </Fade>
+              <Hidden mdDown>
+                <Fade in={true} timeout={1000}>
+                  <Grid
+                    item
+                    xs={12}
+                    md={6}
+                    sx={{
+                      borderRadius: "0px 15px 15px 15px",
+                      backgroundImage: `url(${dmPic})`,
+                      backgroundPosition: "center",
+                      minHeight: 800,
+                      maxHeight: "100%",
+                    }}></Grid>
+                </Fade>
+              </Hidden>
             )}
           </Grid>
           {value === "three" && <ImageCollage />}

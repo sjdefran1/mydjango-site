@@ -72,8 +72,9 @@ export default function SlideFromContainer(props) {
           elevation={7}
           sx={{
             ml: "5%",
-            mr: "0%",
-            maxHeight: "25%",
+            mr: "5%",
+            mb: 1,
+            maxHeight: "40%",
             maxWidth: "100%",
             borderRadius: 2,
             textAlign: "center",
@@ -90,42 +91,100 @@ export default function SlideFromContainer(props) {
             }}>
             Some Relevant Course Work
           </Typography>
-          <Hidden sm></Hidden>
-          <Grow in={true} timeout={1000} container={containerRef.current}>
-            <Stack
-              direction='row'
-              spacing={2}
-              sx={{ justifyContent: "center", mt: 1 }}>
-              <Chip label='COMS227: OOP' color='primary'></Chip>
-              <Chip
-                label='COMS228: Datastructers & Algorithms'
-                color='primary'></Chip>
-            </Stack>
-          </Grow>
-          <Grow in={true} timeout={1300} container={containerRef.current}>
-            <Stack
-              direction='row'
-              spacing={2}
-              sx={{ justifyContent: "center", mt: 1 }}>
-              <Chip label='COMS309: Android Development' color='info'></Chip>
-              <Chip label='CPRE288: Embedded Programming' color='info'></Chip>
-              <Chip label='COMS363: DBMS' color='info'></Chip>
-            </Stack>
-          </Grow>
-          <Grow in={true} timeout={1600} container={containerRef.current}>
-            <Stack
-              direction='row'
-              spacing={2}
-              sx={{ justifyContent: "center", mt: 1, mb: 2 }}>
-              <Chip label='COMS319: Web Development' color='secondary'></Chip>
-              <Chip
-                label='CPRE288: Embedded Programming'
-                color='secondary'></Chip>
-            </Stack>
-          </Grow>
+          <Hidden smDown>
+            <Grow in={true} timeout={1000} container={containerRef.current}>
+              <Stack
+                direction='row'
+                spacing={2}
+                sx={{ justifyContent: "center", mt: 1 }}>
+                <Chip label='COMS227: OOP' color='primary'></Chip>
+                <Chip
+                  label='COMS228: Datastructers & Algorithms'
+                  color='primary'></Chip>
+              </Stack>
+            </Grow>
+
+            <Grow in={true} timeout={1300} container={containerRef.current}>
+              <Stack
+                direction='row'
+                spacing={2}
+                sx={{ justifyContent: "center", mt: 1 }}>
+                <Chip label='COMS309: Android Development' color='info'></Chip>
+                <Chip label='CPRE288: Embedded Programming' color='info'></Chip>
+                <Chip label='COMS363: DBMS' color='info'></Chip>
+              </Stack>
+            </Grow>
+            <Grow in={true} timeout={1600} container={containerRef.current}>
+              <Stack
+                direction='row'
+                spacing={2}
+                sx={{ justifyContent: "center", mt: 1, mb: 2 }}>
+                <Chip label='COMS319: Web Development' color='secondary'></Chip>
+                <Chip
+                  label='CPRE288: Embedded Programming'
+                  color='secondary'></Chip>
+              </Stack>
+            </Grow>
+          </Hidden>
+
+          <Hidden smUp>
+            <Grow in={true} timeout={1300} container={containerRef.current}>
+              <Stack
+                direction='row'
+                spacing={2}
+                sx={{ justifyContent: "center", mt: 1 }}>
+                <Chip label='COMS227: OOP' color='primary'></Chip>
+              </Stack>
+            </Grow>
+            <Grow in={true} timeout={1300} container={containerRef.current}>
+              <Stack
+                direction='row'
+                spacing={2}
+                sx={{ justifyContent: "center", mt: 1 }}>
+                <Chip
+                  label='COMS228: Datastructures & Algorithms'
+                  color='primary'></Chip>
+              </Stack>
+            </Grow>
+
+            <Grow in={true} timeout={1300} container={containerRef.current}>
+              <Stack
+                direction='row'
+                spacing={2}
+                sx={{ justifyContent: "center", mt: 1 }}>
+                <Chip label='CPRE288: Embedded Programming' color='info'></Chip>
+              </Stack>
+            </Grow>
+            <Grow in={true} timeout={1300} container={containerRef.current}>
+              <Stack
+                direction='row'
+                spacing={2}
+                sx={{ justifyContent: "center", mt: 1 }}>
+                <Chip label='COMS319: Web Development' color='info'></Chip>
+              </Stack>
+            </Grow>
+            <Grow in={true} timeout={1300} container={containerRef.current}>
+              <Stack
+                direction='row'
+                spacing={2}
+                sx={{ justifyContent: "center", mt: 1 }}>
+                <Chip
+                  label='COMS309: Android Development'
+                  color='secondary'></Chip>
+              </Stack>
+            </Grow>
+            <Grow in={true} timeout={1300} container={containerRef.current}>
+              <Stack
+                direction='row'
+                spacing={2}
+                sx={{ justifyContent: "center", mt: 1 }}>
+                <Chip label='COMS363: DBMS' color='secondary'></Chip>
+              </Stack>
+            </Grow>
+            <br></br>
+          </Hidden>
         </Paper>
       </Grow>
-      {/* </Paper> */}
     </>
   );
 }

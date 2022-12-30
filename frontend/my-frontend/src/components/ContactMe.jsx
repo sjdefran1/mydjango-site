@@ -31,7 +31,7 @@ class ContactMe extends React.Component {
     };
     console.log(this.state);
     axios
-      .post("http://localhost:8000/messages", data)
+      .post("https://uctedx.deta.dev/messages", data)
       .then((response) => {
         console.log(response);
         this.setState({

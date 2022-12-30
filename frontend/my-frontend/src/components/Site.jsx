@@ -10,7 +10,7 @@ import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import Divider from "@mui/material/Divider";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import djangoJPG from "../static/pics/django.jpg";
+import fastSVG from "../static/pics/fastapi.svg";
 import chatJPG from "../static/pics/chatGPT.jpg";
 import reactSvg from "../static/pics/react.png";
 import sjdSvg from "../static/pics/sjd.png";
@@ -59,10 +59,10 @@ export default function CoolCard(props) {
             </IconButton>
             <IconButton aria-label='django'>
               <a
-                href='https://www.djangoproject.com/'
+                href='https://fastapi.tiangolo.com/'
                 target='_blank'
                 rel='noreferrer'>
-                <Avatar src={djangoJPG} aria-label='django logo' sx={{}} />
+                <Avatar src={fastSVG} aria-label='django logo' sx={{}} />
               </a>
             </IconButton>
             <IconButton aria-label='chatGPT'>
@@ -77,8 +77,9 @@ export default function CoolCard(props) {
           <Box sx={{ textAlign: "center" }}>
             <Typography variant='subtitle1' sx={{ marginY: 1 }} paragraph>
               This website was created w/ React on the frontend (Utilizing
-              Material UI). Django on the backend, and some assistance from
-              OpenAI's ChaptGPT
+              Material UI), deployed statically using Github Pages. FastAPI on
+              the backend deployed using Deta, and some assistance from OpenAI's
+              ChaptGPT
             </Typography>
           </Box>
         </>
