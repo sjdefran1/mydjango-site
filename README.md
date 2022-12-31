@@ -38,7 +38,7 @@ I find reumes boring and too short. I wanted a way to better show off my project
 * npm
 #### Deployed using Github Pages
 
-This is my first project using react and very little expierence with JavaScript as well. I learned a lot about both but still have a lot more to learn. One thing I want to improve on is getting better with creating very reusable components. In places I have some uneeded repition of code that could be cleaned up. 
+This is my first project using react and had very little expierence with JavaScript as well. I learned a lot about both but there is still a lot to learn. One thing I that needs improvement is getting better with creating more reusable components. In places I have some repition of code that could be cleaned up. 
 
 MaterialUI is an incredible tool that makes creating a pretty website a lot easier! I'm glad I stumbled across the framework as it was easy to use and quickly creates
 super clean content. 
@@ -94,7 +94,7 @@ ChatGPT is amazing. It helped me through leraning react & assisted in places on 
 #### Frontend
 * Run react app
   ```sh
-   cd frontend/my-frontend
+  cd frontend/my-frontend
   ```
    
   ```sh
