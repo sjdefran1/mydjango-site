@@ -112,7 +112,6 @@ To get a local copy up and running follow these simple example steps.
   python main.py
   ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- ROADMAP -->
@@ -122,8 +121,6 @@ To get a local copy up and running follow these simple example steps.
 - [ ] Image loading needs to be quicker
 - [ ] Add page to showcase more drawings/photography
 - [ ] Write some blog posts/tutorials 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- CONTACT -->
