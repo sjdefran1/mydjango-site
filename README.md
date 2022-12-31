@@ -135,7 +135,7 @@ Sam DeFrancisco - sjdefran@gmail.com - (515)505-4146 -
 
 * [Readme Template](https://github.com/othneildrew/Best-README-Template/blob/master/README.md)
 * [Material UI](https://mui.com/)
-* [ChatGPT](https://openai.com/blog/chatgpt/) For 
+* [ChatGPT](https://openai.com/blog/chatgpt/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
