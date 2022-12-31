@@ -60,8 +60,6 @@ ChatGPT is amazing. It helped me through leraning react & assisted in places on 
 <!-- GETTING STARTED -->
 # Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
@@ -135,11 +133,9 @@ Sam DeFrancisco - sjdefran@gmail.com - (515)505-4146 -
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
 * [Readme Template](https://github.com/othneildrew/Best-README-Template/blob/master/README.md)
 * [Material UI](https://mui.com/)
-* [ChatGPT](https://openai.com/blog/chatgpt/)
+* [ChatGPT](https://openai.com/blog/chatgpt/) For 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
