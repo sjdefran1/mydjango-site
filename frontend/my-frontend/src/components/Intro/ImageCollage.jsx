@@ -42,68 +42,68 @@ export default function MasonryImageList() {
 const itemData = [
   {
     img: beachColor,
-    title: "Books",
+    title: "SanDiego",
   },
   {
     img: partySt,
-    title: "Coffee table",
+    title: "BourbonStreet",
   },
   {
     img: campanileMe,
-    title: "Sink",
+    title: "CampanileVisit",
   },
   {
     img: daboys,
-    title: "Chairs",
+    title: "Friends",
   },
   {
     img: chrysler,
-    title: "Kitchen",
+    title: "CampanileTree",
   },
   {
     img: curvy,
-    title: "Laptop",
+    title: "SanFran",
   },
   {
     img: trees,
-    title: "Laptop",
+    title: "SanFranTrees",
   },
   {
     img: studentSection,
-    title: "Laptop",
+    title: "ISUgame",
   },
 
   {
     img: kitts,
-    title: "Coffee",
+    title: "Stkitts",
   },
   {
     img: beachCliff,
-    title: "Bed",
+    title: "sanDiego",
   },
   {
     img: drawing1,
-    title: "Doors",
+    title: "mountainDrawing",
   },
   {
     img: samKyle,
-    title: "Doors",
+    title: "ISUbench",
   },
   {
     img: mj,
-    title: "Blinds",
+    title: "mjDrawing",
   },
 
   {
     img: kittSelfie,
-    title: "Storage",
+    title: "stkittSelfie",
   },
   {
     img: sk8,
-    title: "Candle",
+    title: "skateboarding",
   },
   {
     img: dewtour,
-    title: "Laptop",
+    title: "dewtour",
   },
 ];

@@ -97,7 +97,7 @@ export default function CoolCard(props) {
       <CardActions disableSpacing>
         <IconButton aria-label='Github Link'>
           <a
-            href='https://github.com/sjdefran1/GoSports'
+            href='https://github.com/sjdefran1/cyrate'
             target='_blank'
             rel='noreferrer'>
             <GitHubIcon color='action' />
@@ -150,7 +150,7 @@ export default function CoolCard(props) {
               <BulletText text='CRUD capabilities for all features' />
             </Stack>
             <br></br>
-            <Typography variant='h6'>Teamates</Typography>
+            <Typography variant='h6'>Teammates</Typography>
             <BulletText text='Anbu Krishnan, Alex Ong, Megan Eberle' />
           </>
         </CardContent>

@@ -167,7 +167,7 @@ export default function CoolCard(props) {
               <BulletText text='Create an account' />
             </Stack>
             <br></br>
-            <Typography variant='h6'>Teamates</Typography>
+            <Typography variant='h6'>Teammates</Typography>
             <BulletText text='Kaya Zdan, Kyle Rooney, Shannon McCarthy' />
           </>
         </CardContent>
