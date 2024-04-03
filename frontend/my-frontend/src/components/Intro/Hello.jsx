@@ -12,7 +12,7 @@ import Divider from "@mui/material/Divider";
 import PhoneIcon from "@mui/icons-material/Phone";
 import mePic from "../../static/pics/wide-green.jpg";
 
-import defResume from "../../static/DeFrancisco_ResumeF22.pdf";
+import defResume from "../../static/DeFrancisco_Resume_F2023__Copy_-3.pdf";
 import { Hidden, Avatar } from "@mui/material";
 
 export default function Hello() {

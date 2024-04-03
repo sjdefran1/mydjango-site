@@ -80,9 +80,12 @@ function SkillSummary() {
                     direction='row'
                     sx={{ justifyContent: "center", mx: "auto", my: 1 }}>
                     <Chip label='Python' color='info' />
+                    
                     <Chip label='Java' color='error' />
                     <Chip label='SQL' color='primary' />
                     <Chip label='HTML & CSS' color='secondary' />
+                    <Chip label='JavaScript' color='error' />
+
                   </Stack>
                 </Grow>
               </>
@@ -98,6 +101,8 @@ function SkillSummary() {
                     <Chip label='Python' color='info' />
                     <Chip label='Java' color='error' />
                     <Chip label='SQL' color='primary' />
+                    <Chip label='JavaScript' color='error' />
+
                   </Stack>
                 </Grow>
                 <Grow in={expanded} timeout={750}>
@@ -178,7 +183,6 @@ function SkillSummary() {
                 sx={{ justifyContent: "center", mx: "auto", my: 1 }}>
                 <Chip label='C' color='secondary' />
                 <Chip label='C#' color='info' />
-                <Chip label='JavaScript' color='error' />
                 <Chip label='Verilog' color='secondary' />
               </Stack>
             </Grow>

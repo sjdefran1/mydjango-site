@@ -12,6 +12,9 @@ import Typography from "@mui/material/Typography";
 import kinglandSvg from "../static/pics/kingland.svg";
 import javaSvg from "../static/pics/javaSvg.svg";
 import springSvg from "../static/pics/springboot.svg";
+import pythonSVG from "../static/pics/python-5.svg";
+import awsSVG from "../static/aws.svg";
+
 
 function WorkExperience({ company, jobTitle, description }) {
   return (
@@ -56,10 +59,23 @@ function WorkExperience({ company, jobTitle, description }) {
 
           <Box sx={{ textAlign: "center" }}>
             <Typography variant='subtitle1' sx={{ marginY: 1 }} paragraph>
-              Interns at kingland are recognized as fulltime developers. We are
-              immersed into a team and are expected to start clearing tickets
-              right off the bat. Interns code is used within production. (Intern
-              starting summer 2023)
+            As a Software Engineering Intern at Kingland Systems
+            I was a full-time member of the Data Lakehouse team
+            working on the Independence flagship solution. During 
+            my tenure, I designed Extract Transform Load (ETL) scripts utilizing Python for
+            initial loads and change data capture.  
+            
+            </Typography>
+
+            <Typography variant='subtitle1' sx={{ marginY: 1 }} paragraph>
+        
+            Additionally, I collaborated closely with overseas team members to integrate new methods for
+            complex ETL processes and conducted training sessions for the US team to ensure a
+            smooth transition to the new processes. My role also involved
+            active participation in daily standup meetings, sprint planning/retrospectives,
+            and weekly checkpoints with the overseas team. Furthermore, I gained hands-on
+            experience with various AWS services such as Glue, S3, DMS, RDS, 
+            and Athena, providing valuable insights into cloud-based data management and analysis.
             </Typography>
           </Box>
           <Divider textAlign='center' variant='fullWidth' />
@@ -69,6 +85,30 @@ function WorkExperience({ company, jobTitle, description }) {
             sx={{
               justifyContent: "center",
             }}>
+            
+
+            <IconButton aria-label='spring'>
+              <a
+                target='_blank'
+                rel='noreferrer'
+                href='https://spring.io/projects/spring-boot'>
+                <Avatar
+                  src={awsSVG}
+                  aria-label='springLogo'
+                  sx={{ height: 50, width: 50 }}
+                />
+              </a>
+            </IconButton>
+
+            <IconButton aria-label='ppy'>
+              <a
+                target='_blank'
+                rel='noreferrer'
+                href='https://www.python.org/'>
+                <Avatar src={pythonSVG} aria-label='python' />
+              </a>
+            </IconButton>
+
             <IconButton aria-label='java'>
               <a
                 target='_blank'

@@ -238,12 +238,12 @@ const App = () => {
                     <br></br>
                   </Container>
                 </section>
-                <section id='contact'>
+                {/* <section id='contact'>
                   <ContentHeader name='Contact Me!' />
                   <Container maxWidth='md'>
                     <ContactMe />
                   </Container>
-                </section>
+                </section>/ */}
               </div>
             </main>
           </>
