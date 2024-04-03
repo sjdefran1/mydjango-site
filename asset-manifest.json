@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b625cc83.css",
-    "main.js": "/static/js/main.693250ee.js",
+    "main.js": "/static/js/main.af76543a.js",
     "static/media/campanileMe.JPG": "/static/media/campanileMe.b9623af496d24c4de00b.JPG",
     "static/media/kitts.JPG": "/static/media/kitts.ad74a2043ce986a71363.JPG",
     "static/media/trees.jpg": "/static/media/trees.28d8538b7e5e5fb19021.jpg",
@@ -23,11 +23,10 @@
     "static/media/drawing1.JPG": "/static/media/drawing1.9896db3248cec567e403.JPG",
     "static/media/blue_go_sports.png": "/static/media/blue_go_sports.8214e0f9edae35682604.png",
     "static/media/react.png": "/static/media/react.6bcffb56bd0efaa47767.png",
-    "static/media/angular.png": "/static/media/angular.b6d2a9dec3e43e0ffb95.png",
     "static/media/sjd.png": "/static/media/sjd.bb9c902aa040f98c4780.png",
     "static/media/unity.png": "/static/media/unity.7b9d9207c6de001ec561.png",
     "static/media/cyrate2-1.png": "/static/media/cyrate2-1.4a4e4bbe22efe3657bc9.png",
-    "static/media/DeFrancisco_ResumeF22.pdf": "/static/media/DeFrancisco_ResumeF22.8afced6123ccc64e3e7a.pdf",
+    "static/media/DeFrancisco_Resume_F2023__Copy_-3.pdf": "/static/media/DeFrancisco_Resume_F2023__Copy_-3.0ae72dea57df5bcc949c.pdf",
     "static/media/dragons2.jpg": "/static/media/dragons2.2a3ef18a744017603337.jpg",
     "static/media/django.jpg": "/static/media/django.4c399895f677cd3bfbc8.jpg",
     "static/media/kingland.svg": "/static/media/kingland.0948fd216a2297d993d4fbc46a826648.svg",
@@ -37,6 +36,7 @@
     "static/media/mysql.png": "/static/media/mysql.4676ad983d6bd3e9fac9.png",
     "static/media/springboot.svg": "/static/media/springboot.5aa3ad53d19a11288d62b7739385807d.svg",
     "static/media/javaSvg.svg": "/static/media/javaSvg.029fe53a3aa7c5fcca70b3a79a9bf99e.svg",
+    "static/media/aws.svg": "/static/media/aws.2847af72cfc02b1a465e5ca24bbfd35d.svg",
     "static/media/amazon.svg": "/static/media/amazon.8a708a0e0e9afcef8ab2be41c10b3ffb.svg",
     "static/media/python-5.svg": "/static/media/python-5.e6d7dc739a91892bbf1f6262412046dd.svg",
     "static/media/bootstrap.svg": "/static/media/bootstrap.1e86997e56dee23fbbe86270eb3aec36.svg",
@@ -44,10 +44,10 @@
     "static/media/html5-2.svg": "/static/media/html5-2.af5f5e5665f5b43e06aad415f23ce4d0.svg",
     "static/media/fastapi.svg": "/static/media/fastapi.6c84dc4ea9626837be0ce2c5523b6d52.svg",
     "main.b625cc83.css.map": "/static/css/main.b625cc83.css.map",
-    "main.693250ee.js.map": "/static/js/main.693250ee.js.map"
+    "main.af76543a.js.map": "/static/js/main.af76543a.js.map"
   },
   "entrypoints": [
     "static/css/main.b625cc83.css",
-    "static/js/main.693250ee.js"
+    "static/js/main.af76543a.js"
   ]
 }
