@@ -37,13 +37,7 @@ export default function TitleBar() {
                 Projects
               </Button>
             </NavHashLink>
-            <NavHashLink smooth to='#contact'>
-              <Button
-                variant='text'
-                sx={{ ml: 2, borderBottom: 2, borderColor: "secondary" }}>
-                Contact Me!
-              </Button>
-            </NavHashLink>
+            
           </Toolbar>
         </AppBar>
         <Toolbar />
