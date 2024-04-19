@@ -1,17 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.b625cc83.css",
-    "main.js": "/static/js/main.32d0f4ff.js",
+    "main.js": "/static/js/main.48632842.js",
     "static/media/campanileMe.JPG": "/static/media/campanileMe.b9623af496d24c4de00b.JPG",
-    "static/media/kitts.JPG": "/static/media/kitts.ad74a2043ce986a71363.JPG",
     "static/media/trees.jpg": "/static/media/trees.28d8538b7e5e5fb19021.jpg",
-    "static/media/kittsSelfie.JPG": "/static/media/kittsSelfie.2eb734a1aa36b943992b.JPG",
     "static/media/curvy.jpg": "/static/media/curvy.2944c255c0ebbffbd8ab.jpg",
     "static/media/studentSection.jpg": "/static/media/studentSection.c348d80cd861bc74569d.jpg",
     "static/media/samISU2.jpg": "/static/media/samISU2.c9180a7fe9cf9bd56a9e.jpg",
     "static/media/chrysler.JPG": "/static/media/chrysler.703a9ea37872229f30a5.JPG",
     "static/media/beachCliff.JPG": "/static/media/beachCliff.20853d6980ae154bd48a.JPG",
     "static/media/beachColor.JPG": "/static/media/beachColor.613c5f96a75a586752bc.JPG",
+    "static/media/meVanc.jpg": "/static/media/meVanc.33d6b22e33c357828147.jpg",
     "static/media/sk8.PNG": "/static/media/sk8.ff95eb77776a189c3fae.PNG",
     "static/media/daboys.JPG": "/static/media/daboys.b2e83362ac615b1dc6ca.JPG",
     "static/media/mj.JPG": "/static/media/mj.ffdbe62e0458125633b9.JPG",
@@ -44,10 +43,10 @@
     "static/media/html5-2.svg": "/static/media/html5-2.af5f5e5665f5b43e06aad415f23ce4d0.svg",
     "static/media/fastapi.svg": "/static/media/fastapi.6c84dc4ea9626837be0ce2c5523b6d52.svg",
     "main.b625cc83.css.map": "/static/css/main.b625cc83.css.map",
-    "main.32d0f4ff.js.map": "/static/js/main.32d0f4ff.js.map"
+    "main.48632842.js.map": "/static/js/main.48632842.js.map"
   },
   "entrypoints": [
     "static/css/main.b625cc83.css",
-    "static/js/main.32d0f4ff.js"
+    "static/js/main.48632842.js"
   ]
 }
