@@ -16,7 +16,7 @@ import pythonSVG from "../static/pics/python-5.svg";
 import awsSVG from "../static/aws.svg";
 
 
-function WorkExperience({ company, jobTitle, description }) {
+function KinglandCard({ company, jobTitle, description }) {
   return (
     <>
       <Card sx={{ maxWidth: "100%", borderRadius: 3, alignItems: "center" }}>
@@ -58,7 +58,7 @@ function WorkExperience({ company, jobTitle, description }) {
           </Divider>
 
           <Box sx={{ textAlign: "center" }}>
-            <Typography variant='subtitle1' sx={{ marginY: 1 }} paragraph>
+            <Typography variant='subtitle1' sx={{ marginY: 1, paddingX: 3 }} paragraph>
             As a Software Engineering Intern at Kingland Systems
             I was a full-time member of the Data Lakehouse team
             working on the Independence flagship solution. During 
@@ -67,7 +67,7 @@ function WorkExperience({ company, jobTitle, description }) {
             
             </Typography>
 
-            <Typography variant='subtitle1' sx={{ marginY: 1 }} paragraph>
+            <Typography variant='subtitle1' sx={{ marginY: 1, paddingX: 3 }} paragraph>
         
             Additionally, I collaborated closely with overseas team members to integrate new methods for
             complex ETL processes and conducted training sessions for the US team to ensure a
@@ -140,4 +140,4 @@ function WorkExperience({ company, jobTitle, description }) {
   );
 }
 
-export default WorkExperience;
+export default KinglandCard;

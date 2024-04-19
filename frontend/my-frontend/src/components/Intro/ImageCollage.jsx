@@ -10,8 +10,8 @@ import chrysler from "../../static/collage/chrysler.JPG";
 import daboys from "../../static/collage/daboys.JPG";
 import dewtour from "../../static/collage/dewtour.JPG";
 import drawing1 from "../../static/collage/drawing1.JPG";
-import kitts from "../../static/collage/kitts.JPG";
-import kittSelfie from "../../static/collage/kittsSelfie.JPG";
+// import kitts from "../../static/collage/kitts.JPG";
+// import kittSelfie from "../../static/collage/kittsSelfie.JPG";
 import mj from "../../static/collage/mj.JPG";
 import partySt from "../../static/collage/partySt.JPG";
 import sk8 from "../../static/collage/sk8.PNG";
@@ -72,11 +72,6 @@ const itemData = [
     img: studentSection,
     title: "ISUgame",
   },
-
-  {
-    img: kitts,
-    title: "Stkitts",
-  },
   {
     img: beachCliff,
     title: "sanDiego",
@@ -94,10 +89,6 @@ const itemData = [
     title: "mjDrawing",
   },
 
-  {
-    img: kittSelfie,
-    title: "stkittSelfie",
-  },
   {
     img: sk8,
     title: "skateboarding",

@@ -5,20 +5,20 @@ import Hidden from "@mui/material/Hidden";
 import Chip from "@mui/material/Chip";
 import Container from "@mui/material/Container";
 import CssBaseline from "@mui/material/CssBaseline";
-import ProjectCard from "./components/ProjectCard.jsx";
+import ProjectSection from "./sections/ProjectSection.jsx";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import Intro from "./components/Intro/Intro.jsx";
-import TopBar from "./components/TopBar.jsx";
-import WorkExperience from "./components/WorkExpierence.jsx";
-import WorkExpierenceS from "./components/WorkExpeierenceS.jsx";
-import ContentHeader from "./components/ContentHeader.jsx";
+import Intro from "./sections/Intro.jsx";
+import TopBar from "./components/nav/TopBar.jsx";
+import KinglandCard from "./sections/KinglandSection.jsx";
+import JobCard from "./components/JobCard.jsx";
+import ContentHeader from "./components/nav/ContentHeader.jsx";
 import dragonsSvg from "./static/pics/dragons2.jpg";
 import amazonSvg from "./static/pics/amazon.svg";
 import SkillSummary from "./components/SkillSummary.jsx";
-import CyRate from "./components/CyRate.jsx";
-import Site from "./components/Site.jsx";
-import OtherProjects from "./components/OtherProjects.jsx";
-import ContactMe from "./components/ContactMe.jsx";
+// import CyRate from "./components/CyRate.jsx";
+// import Site from "./components/Site.jsx";
+import OtherProjects from "./components/projects/OtherProjects.jsx";
+import ContactMe from "./sections/ContactMe.jsx";
 
 const darkTheme = createTheme({
   palette: {
@@ -139,14 +139,10 @@ const App = () => {
                   <Container maxWidth='xl'>
                     <Grid container spacing={3} wrap='wrap'>
                       <Grid item xs={12} md={6}>
-                        <WorkExperience
-                          company='ACME Inc.'
-                          jobTitle='Software Engineer'
-                          description='Worked on various projects including a project to build a new CRM system for the company.'
-                        />
+                        <KinglandCard />
                       </Grid>
                       <Grid item xs={12} md={6}>
-                        <WorkExpierenceS
+                        <JobCard
                           company='Amazon Logistics'
                           jobTitle='Learning Ambassador'
                           description={desc1}
@@ -155,7 +151,7 @@ const App = () => {
                           ix={100}
                         />
                         <br></br>
-                        <WorkExpierenceS
+                        <JobCard
                           company='Johnston Community School District'
                           jobTitle='Childcare Provider'
                           description='Responsible for looking after group of kids.'
@@ -172,19 +168,8 @@ const App = () => {
                 <section id='projects'>
                   <ContentHeader name='Projects' />
                   <Container maxWidth='lg' xs={{ justifyContent: "center" }}>
-                    <Grid
-                      container
-                      spacing={2}
-                      xs={{ justifyContent: "center" }}>
-                      <Grid item xs={12} md={4}>
-                        <ProjectCard />
-                      </Grid>
-                      <Grid item xs={12} md={4}>
-                        <CyRate />
-                      </Grid>
-                      <Grid item xs={12} md={4}>
-                        <Site />
-                      </Grid>
+                  <ProjectSection />
+
                       <Hidden smDown>
                         {isVisible ? (
                           <>
@@ -232,7 +217,6 @@ const App = () => {
                           </Container>
                         )}
                       </Hidden>
-                    </Grid>
                     {isVisible && <OtherProjects />}
                     <br></br>
                     <br></br>
