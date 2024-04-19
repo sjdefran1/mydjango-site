@@ -6,12 +6,12 @@ import Fade from "@mui/material/Fade";
 import Container from "@mui/material/Container";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-import mePic from "../../static/pics/wide-green.jpg";
-import dmPic from "../../static/pics/dm.jpg";
-import Hello from "./Hello.jsx";
-import School from "./School.jsx";
+import mePic from "../static/pics/wide-green.jpg";
+import dmPic from "../static/pics/dm.jpg";
+import Hello from "../components/Intro/Hello.jsx";
+import School from "../components/Intro/School.jsx";
 import "./Intro.css";
-import ImageCollage from "./ImageCollage.jsx";
+import ImageCollage from "../components/Intro/ImageCollage.jsx";
 import Hidden from "@mui/material/Hidden";
 
 export default function Intro() {

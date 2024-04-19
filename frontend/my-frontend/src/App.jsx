@@ -5,9 +5,9 @@ import Hidden from "@mui/material/Hidden";
 import Chip from "@mui/material/Chip";
 import Container from "@mui/material/Container";
 import CssBaseline from "@mui/material/CssBaseline";
-import ProjectCard from "./components/ProjectCard.jsx";
+import ProjectSection from "./sections/ProjectSection.jsx";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import Intro from "./components/Intro/Intro.jsx";
+import Intro from "./sections/Intro.jsx";
 import TopBar from "./components/TopBar.jsx";
 import WorkExperience from "./components/WorkExpierence.jsx";
 import WorkExpierenceS from "./components/WorkExpeierenceS.jsx";
@@ -15,8 +15,8 @@ import ContentHeader from "./components/ContentHeader.jsx";
 import dragonsSvg from "./static/pics/dragons2.jpg";
 import amazonSvg from "./static/pics/amazon.svg";
 import SkillSummary from "./components/SkillSummary.jsx";
-import CyRate from "./components/CyRate.jsx";
-import Site from "./components/Site.jsx";
+// import CyRate from "./components/CyRate.jsx";
+// import Site from "./components/Site.jsx";
 import OtherProjects from "./components/OtherProjects.jsx";
 import ContactMe from "./components/ContactMe.jsx";
 
@@ -172,19 +172,8 @@ const App = () => {
                 <section id='projects'>
                   <ContentHeader name='Projects' />
                   <Container maxWidth='lg' xs={{ justifyContent: "center" }}>
-                    <Grid
-                      container
-                      spacing={2}
-                      xs={{ justifyContent: "center" }}>
-                      <Grid item xs={12} md={4}>
-                        <ProjectCard />
-                      </Grid>
-                      <Grid item xs={12} md={4}>
-                        <CyRate />
-                      </Grid>
-                      <Grid item xs={12} md={4}>
-                        <Site />
-                      </Grid>
+                  <ProjectSection />
+
                       <Hidden smDown>
                         {isVisible ? (
                           <>
@@ -232,7 +221,6 @@ const App = () => {
                           </Container>
                         )}
                       </Hidden>
-                    </Grid>
                     {isVisible && <OtherProjects />}
                     <br></br>
                     <br></br>

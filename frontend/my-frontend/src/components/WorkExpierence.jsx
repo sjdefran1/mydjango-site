@@ -58,7 +58,7 @@ function WorkExperience({ company, jobTitle, description }) {
           </Divider>
 
           <Box sx={{ textAlign: "center" }}>
-            <Typography variant='subtitle1' sx={{ marginY: 1 }} paragraph>
+            <Typography variant='subtitle1' sx={{ marginY: 1, paddingX: 3 }} paragraph>
             As a Software Engineering Intern at Kingland Systems
             I was a full-time member of the Data Lakehouse team
             working on the Independence flagship solution. During 
@@ -67,7 +67,7 @@ function WorkExperience({ company, jobTitle, description }) {
             
             </Typography>
 
-            <Typography variant='subtitle1' sx={{ marginY: 1 }} paragraph>
+            <Typography variant='subtitle1' sx={{ marginY: 1, paddingX: 3 }} paragraph>
         
             Additionally, I collaborated closely with overseas team members to integrate new methods for
             complex ETL processes and conducted training sessions for the US team to ensure a
