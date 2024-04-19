@@ -12,12 +12,12 @@ import {
   Box,
   Grow,
 } from "@mui/material";
-import pythonSVG from "../static/pics/python-5.svg";
-import mySqlSvg from "../static/pics/mysql.png";
-import alpacaSvg from "../static/pics/alpaca.png";
-import unitySvg from "../static/pics/unity.png";
-import cSvg from "../static/pics/csharp.png";
-import javaSvg from "../static/pics/javaSvg.svg";
+import pythonSVG from "../../static/pics/python-5.svg";
+import mySqlSvg from "../../static/pics/mysql.png";
+import alpacaSvg from "../../static/pics/alpaca.png";
+import unitySvg from "../../static/pics/unity.png";
+import cSvg from "../../static/pics/csharp.png";
+import javaSvg from "../../static/pics/javaSvg.svg";
 
 function OtherProjects() {
   return (

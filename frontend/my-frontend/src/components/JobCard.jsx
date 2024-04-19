@@ -23,7 +23,7 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-function WorkExperienceS({ company, jobTitle, description, image, iy, ix }) {
+function JobCard({ company, jobTitle, description, image, iy, ix }) {
   const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
@@ -91,4 +91,4 @@ function WorkExperienceS({ company, jobTitle, description, image, iy, ix }) {
   );
 }
 
-export default WorkExperienceS;
+export default JobCard;

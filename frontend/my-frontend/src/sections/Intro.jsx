@@ -7,6 +7,7 @@ import Container from "@mui/material/Container";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import mePic from "../static/pics/wide-green.jpg";
+import meVanc from "../static/pics/meVanc.jpg"
 import dmPic from "../static/pics/dm.jpg";
 import Hello from "../components/Intro/Hello.jsx";
 import School from "../components/Intro/School.jsx";

@@ -16,7 +16,7 @@ import pythonSVG from "../static/pics/python-5.svg";
 import awsSVG from "../static/aws.svg";
 
 
-function WorkExperience({ company, jobTitle, description }) {
+function KinglandCard({ company, jobTitle, description }) {
   return (
     <>
       <Card sx={{ maxWidth: "100%", borderRadius: 3, alignItems: "center" }}>
@@ -140,4 +140,4 @@ function WorkExperience({ company, jobTitle, description }) {
   );
 }
 
-export default WorkExperience;
+export default KinglandCard;

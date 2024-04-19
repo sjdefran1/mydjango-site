@@ -1,19 +1,19 @@
 // logos
-import cyRateLogo from "./static/pics/cyrate2-1.png";
-import goSportsLogo from "./static/pics/blue_go_sports.png";
-import sjdSvg from "./static/pics/sjd.png";
+import cyRateLogo from "../static/pics/cyrate2-1.png";
+import goSportsLogo from "../static/pics/blue_go_sports.png";
+import sjdSvg from "../static/pics/sjd.png";
 
 // language/framework icons
-import pythonSVG from "./static/pics/python-5.svg";
-import djangoJPG from "./static/pics/django.jpg";
-import htmlSVG from "./static/pics/html5-2.svg";
-import bootStrapSVG from "./static/pics/bootstrap.svg";
-import javaSvg from "./static/pics/javaSvg.svg";
-import springbootSvg from "./static/pics/springboot.svg";
-import fastSVG from "./static/pics/fastapi.svg";
-import chatJPG from "./static/pics/chatGPT.jpg";
-import reactSvg from "./static/pics/react.png";
-import muiLogo from "./static/pics/mui.png";
+import pythonSVG from "../static/pics/python-5.svg";
+import djangoJPG from "../static/pics/django.jpg";
+import htmlSVG from "../static/pics/html5-2.svg";
+import bootStrapSVG from "../static/pics/bootstrap.svg";
+import javaSvg from "../static/pics/javaSvg.svg";
+import springbootSvg from "../static/pics/springboot.svg";
+import fastSVG from "../static/pics/fastapi.svg";
+import chatJPG from "../static/pics/chatGPT.jpg";
+import reactSvg from "../static/pics/react.png";
+import muiLogo from "../static/pics/mui.png";
 
 const PYTHON_URL = "https://www.python.org/";
 const JAVA_URL = "https://www.java.com/en/";

@@ -4,8 +4,8 @@ import {
   Container,
 } from "@mui/material";
 
-import PROJECTS_LIST from "../Projects.js";
-import ProjectCardV2 from "../components/ProjectCardV2.jsx";
+import PROJECTS_LIST from "../meta/Projects.js";
+import ProjectCardV2 from "../components/projects/ProjectCardV2.jsx";
 
 console.log(PROJECTS_LIST)
 export default function ProjectSection() {
