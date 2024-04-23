@@ -80,12 +80,11 @@ function SkillSummary() {
                     direction='row'
                     sx={{ justifyContent: "center", mx: "auto", my: 1 }}>
                     <Chip label='Python' color='info' />
-                    
+
                     <Chip label='Java' color='error' />
                     <Chip label='SQL' color='primary' />
                     <Chip label='HTML & CSS' color='secondary' />
                     <Chip label='JavaScript' color='error' />
-
                   </Stack>
                 </Grow>
               </>
@@ -102,7 +101,6 @@ function SkillSummary() {
                     <Chip label='Java' color='error' />
                     <Chip label='SQL' color='primary' />
                     <Chip label='JavaScript' color='error' />
-
                   </Stack>
                 </Grow>
                 <Grow in={expanded} timeout={750}>
@@ -143,6 +141,7 @@ function SkillSummary() {
               </Grow>
             </Hidden>
 
+            {/* Mobile View */}
             <Hidden smUp>
               <Grow
                 in={expanded}
@@ -248,6 +247,7 @@ function SkillSummary() {
               </Grow>
             </Hidden>
 
+            {/* Mobile View */}
             <Hidden smUp>
               <Grow
                 in={expanded2}
@@ -301,7 +301,9 @@ function SkillSummary() {
             </Grow>
           </AccordionDetails>
         </Accordion>
-        <Accordion TransitionProps={{ unmountOnExit: true }}>
+        <Accordion
+          TransitionProps={{ unmountOnExit: true }}
+          onChange={() => handleExpandClick(3)}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls='panel2a-content'
@@ -309,11 +311,17 @@ function SkillSummary() {
             <Typography>Other Skills/Hobies</Typography>
           </AccordionSummary>
           <AccordionDetails sx={{ overflowY: "auto", overflowX: "auto" }}>
-            <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
-            </Typography>
+            <Grow in={expanded3} container={containerRef.current} timeout={750}>
+              <Stack
+                spacing={1}
+                direction='row'
+                sx={{ justifyContent: "center", mx: "auto", my: 1 }}>
+                <Chip label='Sports' color='secondary' />
+                <Chip label='Drawing' color='info' />
+                <Chip label='Designing' color='error' />
+                <Chip label='Video Games' color='secondary' />
+              </Stack>
+            </Grow>
           </AccordionDetails>
         </Accordion>
 
