@@ -75,8 +75,6 @@ const darkTheme = createTheme({
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
-  const [isVisible, setIsVisible] = useState(false);
-
   const desc1 = // eslint-disable-next-line
     "The responsibilities of Learning Ambassadors include training and onboarding new employees. \
     Explaining rules and policies for working at the site, \
@@ -89,9 +87,8 @@ const App = () => {
     In addition, I worked closely with delivery drivers to ensure low package \
     loss and correct routing of orders.";
 
-  const handleClick = () => {
-    setIsVisible(!isVisible);
-  };
+  const desc2 =
+    "Provide quality care for school-age youth during the school year and full-day child care on early dismissal days, no school days, school holidays/breaks, and full-day during the summer months.";
 
   useEffect(() => {
     const imgs = [
@@ -154,7 +151,7 @@ const App = () => {
                         <JobCard
                           company='Johnston Community School District'
                           jobTitle='Childcare Provider'
-                          description='Responsible for looking after group of kids.'
+                          description={desc2}
                           image={dragonsSvg}
                           iy={100}
                           ix={100}
@@ -168,58 +165,7 @@ const App = () => {
                 <section id='projects'>
                   <ContentHeader name='Projects' />
                   <Container maxWidth='lg' xs={{ justifyContent: "center" }}>
-                  <ProjectSection />
-
-                      <Hidden smDown>
-                        {isVisible ? (
-                          <>
-                            <Container maxWidth='sm'>
-                              <Chip
-                                variant='filled'
-                                color='secondary'
-                                label='Hide More Projects'
-                                onClick={handleClick}
-                                sx={{ ml: "40%", mr: "43%", mt: 2 }}></Chip>
-                            </Container>
-                          </>
-                        ) : (
-                          <Container maxWidth='sm'>
-                            <Chip
-                              variant='filled'
-                              color='secondary'
-                              label='Show More Projects'
-                              onClick={handleClick}
-                              sx={{ ml: "40%", mr: "43%", mt: 2 }}></Chip>
-                          </Container>
-                        )}
-                      </Hidden>
-
-                      <Hidden smUp>
-                        {isVisible ? (
-                          <>
-                            <Container maxWidth='sm'>
-                              <Chip
-                                variant='filled'
-                                color='secondary'
-                                label='Hide More Projects'
-                                onClick={handleClick}
-                                sx={{ ml: "32%", mr: "68%", mt: 2 }}></Chip>
-                            </Container>
-                          </>
-                        ) : (
-                          <Container maxWidth='sm'>
-                            <Chip
-                              variant='filled'
-                              color='secondary'
-                              label='Show More Projects'
-                              onClick={handleClick}
-                              sx={{ ml: "32%", mr: "68%", mt: 2 }}></Chip>
-                          </Container>
-                        )}
-                      </Hidden>
-                    {isVisible && <OtherProjects />}
-                    <br></br>
-                    <br></br>
+                    <ProjectSection />
                   </Container>
                 </section>
                 {/* <section id='contact'>
